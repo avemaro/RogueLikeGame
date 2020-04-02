@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum TerrainType {
-    wall, land, water
+    wall, land, water, stair
 }

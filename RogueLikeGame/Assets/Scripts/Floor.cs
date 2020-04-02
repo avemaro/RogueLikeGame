@@ -12,11 +12,11 @@ public class Floor {
 
         for (var x = 0; x < sizeX; x++) {
             for (var y = 0; y < sizeY; y++) {
-                TerrainType terrain = TerrainType.wall;
+                TerrainType terrain = TerrainType.land;
                 switch (floorData[y].ToCharArray()[x]) {
                     case '◆': terrain = TerrainType.wall; break;
-                    case '　': terrain = TerrainType.land; break;
                     case '◇': terrain = TerrainType.water; break;
+                    case '階': terrain = TerrainType.stair; break;
                 }
                 terrains.Add((x, y), terrain);
             }
