@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class Floor {
     Dictionary<(int x, int y), TerrainType> terrains = new Dictionary<(int x, int y), TerrainType>();
+    Player player;
 
-    public Floor(string[] floorData) {
+    public Floor(Player player, string[] floorData) {
+        this.player = player;
+
         var sizeX = floorData[0].Length;
         var sizeY = floorData.Length;
 
@@ -17,6 +20,7 @@ public class Floor {
                     case '◆': terrain = TerrainType.wall; break;
                     case '◇': terrain = TerrainType.water; break;
                     case '階': terrain = TerrainType.stair; break;
+                    case '試': player.Position = (x, y); break;
                 }
                 terrains.Add((x, y), terrain);
             }
