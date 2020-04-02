@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum TerrainType {
-    wall, land, water, stair
+    wall = '◆', land = '　', water = '◇', stair = '階'
 }
 
 public static class TerrainTypeExtend {
