@@ -45,6 +45,11 @@ namespace Tests
             floor.PrintFloor();
         }
 
+        [Test]
+        public void PlayerMoves() {
+
+        }
+
 
     }
 }
