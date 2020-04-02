@@ -4,6 +4,8 @@ using System.IO;
 using UnityEngine;
 
 public class Floor {
+
+
     (int x, int y) floorSize;
     Dictionary<(int x, int y), TerrainType> terrains = new Dictionary<(int x, int y), TerrainType>();
     public Player player = new Player();
@@ -14,14 +16,11 @@ public class Floor {
 
         for (var x = 0; x < floorSize.x; x++) {
             for (var y = 0; y < floorSize.y; y++) {
-                TerrainType terrain = TerrainType.land;
-                switch (floorData[y].ToCharArray()[x]) {
-                    case '◆': terrain = TerrainType.wall; break;
-                    case '◇': terrain = TerrainType.water; break;
-                    case '階': terrain = TerrainType.stair; break;
-                    case '試': player.Position = (x, y); break;
-                }
+                var data = floorData[y].ToCharArray()[x];
+                TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add((x, y), terrain);
+
+                if (data == '試') player.Position = (x, y);
             }
         }
     }
