@@ -110,25 +110,16 @@ namespace Tests
 
             int[] moves = { 2, 2, 2, 3, 4, 4 };
             Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
+            floor.PrintFloor();
             player.Attack();
             floor.PrintFloor();
 
-            moves = new int[] { 4, 4, 4, 4, 4};
+            moves = new int[] { 4, 4, 4, 4, 4,
+                                2, 3, 3, 4, 4,
+                                4, 4 };
             Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
-            player.Move(Direction.right);
-            player.Attack();
             floor.PrintFloor();
-
-            moves = new int[] { 2, 3, 3 };
-            Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
-            player.Move(Direction.down);
-            player.Attack();
-            floor.PrintFloor();
-
-            moves = new int[] { 4, 4, 4, 4};
-            Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
             Assert.AreEqual(floor.StairPosition, player.Position);
-            floor.PrintFloor();
         }
     }
 }

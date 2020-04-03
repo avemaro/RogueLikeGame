@@ -42,12 +42,8 @@ public class Floor {
         nextCell.type = TerrainType.land;
 
         foreach (var direction in DirectionExtend.AllCases()) {
-            nextCell = GetTerrainCell(to);
-            while (true) {
-                nextCell = (TerrainCell)nextCell.Next(direction);
-                if (nextCell.type != TerrainType.breakableWall) break;
-                nextCell.type = TerrainType.land;
-            }
+            nextCell = (TerrainCell)GetTerrainCell(to).Next(direction);
+            IsAttaced(nextCell);
         }
     }
 
