@@ -41,12 +41,20 @@ namespace Tests
             Assert.AreEqual(TerrainType.land, floor.GetTerrain(1, 1));
             Assert.AreEqual(TerrainType.water, floor.GetTerrain(4, 1));
             Assert.AreEqual(TerrainType.stair, floor.GetTerrain(8, 8));
-            Assert.AreEqual((2, 2), floor.player.Position);
+            Assert.AreEqual((2, 2), floor.Player.Position);
             floor.PrintFloor();
         }
 
         [Test]
         public void PlayerMoves() {
+            var floor = new Floor(fei1);
+            var player = floor.Player;
+
+            Assert.True(player.Move(Direction.down));
+            Assert.False(player.Move(Direction.downRight));
+            Assert.True(player.Move(Direction.down));
+            Assert.False(player.Move(Direction.downRight));
+            Assert.True(player.Move(Direction.downLeft));
 
         }
 

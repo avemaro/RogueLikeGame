@@ -8,7 +8,7 @@ public class Floor {
 
     (int x, int y) floorSize;
     Dictionary<(int x, int y), TerrainType> terrains = new Dictionary<(int x, int y), TerrainType>();
-    public Player player = new Player();
+    public Player Player { get; private set; } = new Player();
 
     public Floor(string[] floorData) {
         floorSize.x = floorData[0].Length;
@@ -20,7 +20,7 @@ public class Floor {
                 TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add((x, y), terrain);
 
-                if (data == '試') player.Position = (x, y);
+                if (data == '試') Player.Position = (x, y);
             }
         }
     }
@@ -30,11 +30,11 @@ public class Floor {
     }
 
     public void PrintFloor() {
-        for (var x = 0; x < floorSize.x; x++) {
+        for (var y = 0; y < floorSize.y; y++) {
             var str = "";
-            for (var y = 0; y < floorSize.y; y++) {
+            for (var x = 0; x < floorSize.x; x++) {
                 char data = (char)terrains[(x, y)];
-                if (player.Position == (x, y)) data = '試';
+                if (Player.Position == (x, y)) data = '試';
                 str += data;
             }
             Debug.Log(str);
