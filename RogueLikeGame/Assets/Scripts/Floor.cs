@@ -20,7 +20,7 @@ public class Floor {
                 TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add((x, y), terrain);
 
-                if (data == '試') Player.Position = (x, y);
+                if (data == '試') Player.Position = new Cell(x, y);
             }
         }
     }

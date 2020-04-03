@@ -55,7 +55,7 @@ namespace Tests
             Assert.True(player.Move(Direction.down));
             Assert.False(player.Move(Direction.downRight));
             Assert.True(player.Move(Direction.downLeft));
-
+            Assert.AreEqual((1, 5), player.Position);
         }
 
 
