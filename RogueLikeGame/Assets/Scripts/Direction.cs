@@ -1,12 +1,24 @@
-﻿using System.Collections;
+﻿
 using System.Collections.Generic;
-using UnityEngine;
 
 public enum Direction {
     up, upRight, right, downRight, down, downLeft, left, upLeft
 }
 
 public static class DirectionExtend {
+    public static Direction[] AllCases() {
+        return new Direction[] { Direction.up, Direction.upRight, Direction.right,
+        Direction.downRight, Direction.down, Direction.downLeft, Direction.left,
+        Direction.upLeft };
+    }
+
+    public static List<Direction> GetDirections(int[] indexes) {
+        var directions = new List<Direction>();
+        foreach (var index in indexes)
+            directions.Add(AllCases()[index]);
+        return directions;
+    }
+
     public static bool IsDiagonal(this Direction direction) {
         switch (direction) {
             case Direction.upRight:

@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 public enum TerrainType {
-    wall = '◆', land = '　', water = '◇', stair = '階'
+    wall = '◆', land = '　', water = '◇'
 }
 
 public static class TerrainTypeExtend {
@@ -11,7 +8,6 @@ public static class TerrainTypeExtend {
         switch (data) {
             case '◆': return TerrainType.wall;
             case '◇': return TerrainType.water;
-            case '階': return TerrainType.stair;
         }
         return TerrainType.land;
     }

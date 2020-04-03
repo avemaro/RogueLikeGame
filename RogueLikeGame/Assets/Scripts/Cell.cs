@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
     public int x;
@@ -14,6 +12,13 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
 
     public Cell Next(Direction direction) {
         return new Cell(x + direction.GetValue().x, y + direction.GetValue().y);
+    }
+
+    public List<Cell> Next(Direction[] directions) {
+        var cells = new List<Cell>();
+        foreach (var direction in directions)
+            cells.Add(Next(direction));
+        return cells;
     }
 
     public bool Equals(Cell other) {
@@ -38,5 +43,9 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
 
     public override int GetHashCode() {
         return base.GetHashCode();
+    }
+
+    public override string ToString() {
+        return "(" + x + ", " + y + ")";
     }
 }

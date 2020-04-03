@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Floor {
-
-
     (int x, int y) floorSize;
     Dictionary<(int x, int y), TerrainType> terrains = new Dictionary<(int x, int y), TerrainType>();
+    public Cell StairPosition { get; private set; }
     public Player Player { get; private set; }
 
     public Floor(string[] floorData) {
@@ -23,12 +20,20 @@ public class Floor {
                 terrains.Add((x, y), terrain);
 
                 if (data == '試') Player.Position = new Cell(x, y);
+                if (data == '階') StairPosition = new Cell(x, y);
             }
         }
     }
 
     public TerrainType GetTerrain(Cell cell) {
         return GetTerrain(cell.x, cell.y);
+    }
+
+    public List<TerrainType> GetTerrain(List<Cell> cells) {
+        var terrains = new List<TerrainType>();
+        foreach (var cell in cells)
+            terrains.Add(GetTerrain(cell));
+        return terrains;
     }
 
     public TerrainType GetTerrain(int x, int y) {
@@ -41,6 +46,7 @@ public class Floor {
             for (var x = 0; x < floorSize.x; x++) {
                 char data = (char)terrains[(x, y)];
                 if (Player.Position == (x, y)) data = '試';
+                if (StairPosition == (x, y)) data = '階';
                 str += data;
             }
             Debug.Log(str);
