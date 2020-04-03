@@ -18,7 +18,6 @@ public class Floor {
 
         for (var x = 0; x < floorSize.x; x++) {
             for (var y = 0; y < floorSize.y; y++) {
-                Debug.Log("(" + x + ", " + y + ")");
                 var data = floorData[y].ToCharArray()[x];
                 TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add((x, y), terrain);

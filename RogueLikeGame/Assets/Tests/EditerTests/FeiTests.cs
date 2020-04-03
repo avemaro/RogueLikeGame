@@ -95,8 +95,7 @@ namespace Tests
                                    1, 2, 2, 3, 3,
                                    5, 4, 4};
             player.Move(DirectionExtend.GetDirections(correctMoves));
-            Assert.AreEqual((8, 8), player.Position);
-
+            Assert.AreEqual(floor.StairPosition, player.Position);
         }
 
         [Test]
@@ -104,6 +103,20 @@ namespace Tests
             var floor = new Floor(fei2);
             var player = floor.Player;
             floor.PrintFloor();
+
+            Assert.False(player.Move(Direction.right));
+            player.Attack();
+            Assert.True(player.Move(Direction.right));
+
+            int[] moves = { 2, 2, 2, 3, 4, 4 };
+            Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
+            player.Attack();
+
+            moves = new int[] { 4, 4, 4, 4, 4,
+                                2, 3, 3, 4, 4,
+                                4, 4};
+            Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
+            Assert.AreEqual(floor.StairPosition, player.Position);
         }
     }
 }
