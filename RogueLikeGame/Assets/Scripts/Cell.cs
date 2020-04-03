@@ -15,7 +15,7 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
         this.y = y;
     }
 
-    public Cell Next(Direction direction) {
+    public virtual Cell Next(Direction direction) {
         return new Cell(x + direction.GetValue().x, y + direction.GetValue().y);
     }
 

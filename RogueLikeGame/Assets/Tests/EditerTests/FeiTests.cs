@@ -75,8 +75,6 @@ namespace Tests
             floor.PrintFloor();
         }
 
-        
-
         [Test]
         public void Test_Fei1() {
             var floor = new Floor(fei1);
