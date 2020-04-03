@@ -9,6 +9,10 @@ public class Player {
         this.floor = floor;
     }
 
+    public void Attack() {
+
+    }
+
     public bool Move(Direction direction) {
         if (!IsRegal(direction)) return false;
         Position = Position.Next(direction);
