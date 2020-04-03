@@ -8,9 +8,11 @@ public class Floor {
 
     (int x, int y) floorSize;
     Dictionary<(int x, int y), TerrainType> terrains = new Dictionary<(int x, int y), TerrainType>();
-    public Player Player { get; private set; } = new Player();
+    public Player Player { get; private set; }
 
     public Floor(string[] floorData) {
+        Player = new Player(this);
+
         floorSize.x = floorData[0].Length;
         floorSize.y = floorData.Length;
 
@@ -23,6 +25,10 @@ public class Floor {
                 if (data == '試') Player.Position = new Cell(x, y);
             }
         }
+    }
+
+    public TerrainType GetTerrain(Cell cell) {
+        return GetTerrain(cell.x, cell.y);
     }
 
     public TerrainType GetTerrain(int x, int y) {

@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
-    int x;
-    int y;
+    public int x;
+    public int y;
 
     public Cell(int x, int y) {
         this.x = x;
