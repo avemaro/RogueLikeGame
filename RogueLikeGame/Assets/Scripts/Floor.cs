@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Floor {
@@ -6,6 +7,21 @@ public class Floor {
     Dictionary<(int x, int y), TerrainType> terrains = new Dictionary<(int x, int y), TerrainType>();
     public Cell StairPosition { get; private set; }
     public Player Player { get; private set; }
+
+    internal void IsAttaced(Cell to) {
+        if (terrains[to.Tuple] != TerrainType.breakableWall) return;
+        terrains[to.Tuple] = TerrainType.land;
+
+        foreach (var direction in DirectionExtend.AllCases()) {
+            var next = to;
+            while (true) {
+                next = next.Next(direction);
+                if (terrains[next.Tuple] != TerrainType.breakableWall) break;
+                terrains[next.Tuple] = TerrainType.land;
+            }
+
+        }
+    }
 
     public Floor(string[] floorData) {
         Player = new Player(this);
@@ -48,8 +64,8 @@ public class Floor {
             var str = "";
             for (var x = 0; x < floorSize.x; x++) {
                 char data = (char)terrains[(x, y)];
-                if (Player.Position == (x, y)) data = '試';
                 if (StairPosition == (x, y)) data = '階';
+                if (Player.Position == (x, y)) data = '試';
                 str += data;
             }
             Debug.Log(str);

@@ -5,6 +5,11 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
     public int x;
     public int y;
 
+    public (int x, int y) Tuple {
+        get { return (x, y); }
+    }
+
+
     public Cell(int x, int y) {
         this.x = x;
         this.y = y;
