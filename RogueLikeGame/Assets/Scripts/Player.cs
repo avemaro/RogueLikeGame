@@ -4,21 +4,13 @@ using System.Collections.Generic;
 public class Player {
     public Floor floor;
     public Cell Position { get; set; }
-    Direction direction = Direction.down;
 
     public Player(Floor floor) {
         this.floor = floor;
     }
 
-    public void Attack() {
-        var to = Position.Next(direction);
-
-    }
-
     public bool Move(Direction direction) {
-        this.direction = direction;
-
-        if (!IsRegalMove()) return false;
+        if (!IsRegal(direction)) return false;
         Position = Position.Next(direction);
         return true;
     }
@@ -30,7 +22,7 @@ public class Player {
         return hasMoved;
     }
 
-    bool IsRegalMove() {
+    bool IsRegal(Direction direction) {
         var to = Position.Next(direction);
         if (floor.GetTerrain(to) != TerrainType.land) return false;
 

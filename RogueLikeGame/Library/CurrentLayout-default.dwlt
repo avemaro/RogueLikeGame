@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 786
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 504, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 38
+  controlID: 78
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 39
+  controlID: 79
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 40
+  controlID: 80
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,8 +185,8 @@ MonoBehaviour:
     y: 0
     width: 365
     height: 463
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 418
     height: 736
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 19}
@@ -276,7 +276,7 @@ MonoBehaviour:
   - {fileID: 21}
   - {fileID: 22}
   m_Selected: 2
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 2.1928415, y: 0.8794318, z: 366.74646}
     speed: 2
     m_Value: {x: 2.1928415, y: 0.8794318, z: 366.74646}
   m_RenderMode: 0
@@ -365,7 +365,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 12.5497055
     speed: 2
     m_Value: 12.5497055
   m_Ortho:
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -421,9 +421,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e82e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3cfbffff
+      m_ExpandedIDs: 4ad0ffffbcd0ffff98d1ffff04d2ffff78d2ffffe4d2ffff54d3ffffc0d3ffff38d4ffffa4d4ffff14d5ffff80d5ffffeed5ffff5ad6ffffd6d6ffff42d7ffffacd7ffff18d8ffff88d8fffff4d8ffff62d9ffffced9ffff3cdaffffa8daffffbcdaffff2adbffffa0dbffff0cdcffff7cdcffffe8dcffff56ddffffc2ddffff30deffff9cdeffff0edfffff7adfffffe8dfffff54e0ffffc8e0ffff34e1ffffa4e1ffff10e2ffff80e2ffffece2ffff5ce3ffffc8e3ffff38e4ffffa4e4ffff18e5ffff84e5ffff98e5ffff06e6ffff76e6ffffe2e6fffffae6ffff66e7ffffdae7ffff46e8ffffb6e8ffff22e9ffff98e9ffff04eaffff72eaffffdeeaffff52ebffffbeebffff34ecffffa0ecffff10edffff7cedffffa0edffff0ceeffff80eeffffeceeffff5cefffffceeffffff2efffff5ef0ffff76f0ffffe2f0ffff54f1ffffc0f1ffff40f2ffffacf2ffff1af3ffff86f3fffffcf3ffff68f4ffffdcf4ffff00f5ffff22f5ffff46f5ffff5ef5ffffcaf5ffff3cf6ffff60f6ffff78f6ffff9cf6ffffb4f6ffffd8f6fffff0f6ffff5cf7ffffcaf7ffff36f8ffffa6f8ffff12f9ffff88f9ffffacf9ffffc4f9ffff36faffff3afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -495,8 +495,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -263
     m_HBaseRangeMax: 263
-    m_VBaseRangeMin: -221
-    m_VBaseRangeMax: 221
+    m_VBaseRangeMin: -210.5
+    m_VBaseRangeMax: 210.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -513,11 +513,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 526
-      height: 442
+      height: 421
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 263, y: 221}
+    m_Translation: {x: 263, y: 210.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -525,12 +525,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -263
-      y: -221
+      y: -210.5
       width: 526
-      height: 442
+      height: 421
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 526, y: 442}
+  m_LastWindowPixelSize: {x: 1052, y: 884}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4391848389275900105, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animator
-    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6973158847631862895, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -644,20 +644,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/Checkers
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/Checkers
   m_LastFoldersGridSize: 65
-  m_LastProjectPath: /Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame
+  m_LastProjectPath: /Users/yamasaki/BoardGamesUnity/BoardGames
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20340000
-    m_LastClickedID: 13344
-    m_ExpandedIDs: 000000001c3400002234000000ca9a3b
+    m_SelectedIDs: 54340000
+    m_LastClickedID: 13396
+    m_ExpandedIDs: 0000000048340000523400005c34000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,7 +685,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000048340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -757,14 +757,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3303252850963283158, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
     y: 538
-    width: 1021
+    width: 824
     height: 252
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &19
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -825,9 +825,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1022
+    x: 771
     y: 75
-    width: 417
+    width: 668
     height: 715
   m_ViewDataDictionary: {fileID: 0}
   m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
@@ -862,7 +862,7 @@ MonoBehaviour:
     height: 715
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 147
+    ID: 148
     splitterInitialOffset: 324
     currentActiveSplitter: -1
     realSizes: 0001000085010000
@@ -878,10 +878,10 @@ MonoBehaviour:
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     newResultList:
-    - id: 1003
-      uniqueId: '[RogueLikeGame][suite]'
-      name: RogueLikeGame
-      fullName: RogueLikeGame
+    - id: '[200210_MojiFactory][suite]'
+      uniqueId: 
+      name: 200210_MojiFactory
+      fullName: 200210_MojiFactory
       resultStatus: 0
       duration: 0
       messages: 
@@ -900,7 +900,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 313773d63beef20243a174432d755269ffffff7f
+      m_ExpandedIDs: 313773d63beef20243a17443ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -930,11 +930,11 @@ MonoBehaviour:
     m_Window: {fileID: 21}
     newResultList:
     - id: 1000
-      uniqueId: '[RogueLikeGame][suite]'
-      name: RogueLikeGame
-      fullName: RogueLikeGame
-      resultStatus: 0
-      duration: 0
+      uniqueId: '[BoardGames][suite]'
+      name: BoardGames
+      fullName: BoardGames
+      resultStatus: 1
+      duration: 0.2697193
       messages: 
       output: 
       stacktrace: 
@@ -945,13 +945,432 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
+    - id: 1023
+      uniqueId: '[/Users/yamasaki/BoardGamesUnity/BoardGames/Library/ScriptAssemblies/EditerTests.dll][suite]'
+      name: EditerTests.dll
+      fullName: /Users/yamasaki/BoardGamesUnity/BoardGames/Library/ScriptAssemblies/EditerTests.dll
+      resultStatus: 1
+      duration: 0.2251799
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[BoardGames][suite]'
+    - id: 1004
+      uniqueId: EditerTests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.2129698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[/Users/yamasaki/Documents/GitHub/BoardGamesUnity/BoardGames/Library/ScriptAssemblies/EditerTests.dll][suite]'
+    - id: 1001
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.CheckersTests][suite]
+      name: CheckersTests
+      fullName: Tests.CheckersTests
+      resultStatus: 1
+      duration: 0.0709408
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1002
+      uniqueId: EditerTests.dll/Tests/CheckersTests/[EditerTests][Tests.CheckersTests.Test1_BoardHasInitialized]
+      name: Test1_BoardHasInitialized
+      fullName: Tests.CheckersTests.Test1_BoardHasInitialized
+      resultStatus: 1
+      duration: 0.0210862
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.CheckersTests][suite]
+    - id: 1003
+      uniqueId: EditerTests.dll/Tests/CheckersTests/[EditerTests][Tests.CheckersTests.Test2_PiecesMoveDiagonallyForward]
+      name: Test2_PiecesMoveDiagonallyForward
+      fullName: Tests.CheckersTests.Test2_PiecesMoveDiagonallyForward
+      resultStatus: 1
+      duration: 0.0094491
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.CheckersTests][suite]
+    - id: 1004
+      uniqueId: EditerTests.dll/Tests/CheckersTests/[EditerTests][Tests.CheckersTests.Test3_MovePieceAlternately]
+      name: Test3_MovePieceAlternately
+      fullName: Tests.CheckersTests.Test3_MovePieceAlternately
+      resultStatus: 1
+      duration: 0.0062102
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.CheckersTests][suite]
+    - id: 1005
+      uniqueId: EditerTests.dll/Tests/CheckersTests/[EditerTests][Tests.CheckersTests.Test4_PieceCapture]
+      name: Test4_PieceCapture
+      fullName: Tests.CheckersTests.Test4_PieceCapture
+      resultStatus: 1
+      duration: 0.0008998
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.CheckersTests][suite]
+    - id: 1006
+      uniqueId: EditerTests.dll/Tests/CheckersTests/[EditerTests][Tests.CheckersTests.Test5_PieceMustCapture]
+      name: Test5_PieceMustCapture
+      fullName: Tests.CheckersTests.Test5_PieceMustCapture
+      resultStatus: 1
+      duration: 0.0006635
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.CheckersTests][suite]
+    - id: 1007
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+      name: GomokuTests
+      fullName: Tests.GomokuTests
+      resultStatus: 1
+      duration: 0.0657852
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1008
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test1_a1HasNoCellOnUpAndLeft]
+      name: Test1_a1HasNoCellOnUpAndLeft
+      fullName: Tests.GomokuTests.Test1_a1HasNoCellOnUpAndLeft
+      resultStatus: 1
+      duration: 0.0008909
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1009
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test2_h8HasNoCellOnUpAndLeft]
+      name: Test2_h8HasNoCellOnUpAndLeft
+      fullName: Tests.GomokuTests.Test2_h8HasNoCellOnUpAndLeft
+      resultStatus: 1
+      duration: 0.0004608
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1010
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test3_BoardHasInitialized]
+      name: Test3_BoardHasInitialized
+      fullName: Tests.GomokuTests.Test3_BoardHasInitialized
+      resultStatus: 1
+      duration: 0.0010356
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1011
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test4_PutPieceAlternately]
+      name: Test4_PutPieceAlternately
+      fullName: Tests.GomokuTests.Test4_PutPieceAlternately
+      resultStatus: 1
+      duration: 0.001835
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1012
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test5_PutPieceOnVacantCell]
+      name: Test5_PutPieceOnVacantCell
+      fullName: Tests.GomokuTests.Test5_PutPieceOnVacantCell
+      resultStatus: 1
+      duration: 0.0004628
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1014
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test6_2_5PiecesInRowWinsGame]
+      name: Test6_2_5PiecesInRowWinsGame
+      fullName: Tests.GomokuTests.Test6_2_5PiecesInRowWinsGame
+      resultStatus: 1
+      duration: 0.00147
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1013
+      uniqueId: EditerTests.dll/Tests/GomokuTests/[EditerTests][Tests.GomokuTests.Test6_5PiecesInRowWinsGame]
+      name: Test6_5PiecesInRowWinsGame
+      fullName: Tests.GomokuTests.Test6_5PiecesInRowWinsGame
+      resultStatus: 1
+      duration: 0.0011545
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.GomokuTests][suite]
+    - id: 1015
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+      name: ReverseTests
+      fullName: Tests.ReverseTests
+      resultStatus: 1
+      duration: 0.0617523
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1016
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test1_BoardHasInitialized]
+      name: Test1_BoardHasInitialized
+      fullName: Tests.ReverseTests.Test1_BoardHasInitialized
+      resultStatus: 1
+      duration: 0.001211
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+    - id: 1017
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test2_PutPieceAlternately]
+      name: Test2_PutPieceAlternately
+      fullName: Tests.ReverseTests.Test2_PutPieceAlternately
+      resultStatus: 1
+      duration: 0.0029944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+    - id: 1018
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test3_PiecePinchOtherPieces]
+      name: Test3_PiecePinchOtherPieces
+      fullName: Tests.ReverseTests.Test3_PiecePinchOtherPieces
+      resultStatus: 1
+      duration: 0.0020718
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+    - id: 1019
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test4_APieceHasReveresed]
+      name: Test4_APieceHasReveresed
+      fullName: Tests.ReverseTests.Test4_APieceHasReveresed
+      resultStatus: 1
+      duration: 0.0011149
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+    - id: 1020
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test5_PiecesHaveReversed]
+      name: Test5_PiecesHaveReversed
+      fullName: Tests.ReverseTests.Test5_PiecesHaveReversed
+      resultStatus: 1
+      duration: 0.0191181
+      messages: 
+      output: '********
+
+        ********
+
+        ***B****
+
+        ***BB***
+
+        **BWW***
+
+        *B******
+
+        ********
+
+        ********
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+    - id: 1021
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test6_PassTurn]
+      name: Test6_PassTurn
+      fullName: Tests.ReverseTests.Test6_PassTurn
+      resultStatus: 1
+      duration: 0.0092483
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
+    - id: 1022
+      uniqueId: EditerTests.dll/Tests/ReverseTests/[EditerTests][Tests.ReverseTests.Test7_GameOver]
+      name: Test7_GameOver
+      fullName: Tests.ReverseTests.Test7_GameOver
+      resultStatus: 1
+      duration: 0.0046457
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.ReverseTests][suite]
     m_ResultText: Test5_PieceMustCapture (0.001s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: b0ab910b
       m_LastClickedID: 194096048
-      m_ExpandedIDs: 856bd585434014969e0a699edbf809a4e21259a52de7e0a6a385eca679b753a7ae5afbb2102937b5503517b765d068c438c680c4e934dbc7313773d6ba1057eae79943ec3beef2024940b904d10d1e11dd460113d23fbd132b6cf91ac558723c4054844043a17443ef02f94791d57851379cef51e189df5b2d7552690ed3eb77ffffff7f
+      m_ExpandedIDs: 856bd585434014969e0a699edbf809a4e21259a52de7e0a6a385eca679b753a7ae5afbb2102937b5503517b765d068c438c680c4e934dbc7313773d6ba1057eae79943ec3beef2024940b904d10d1e11dd460113d23fbd132b6cf91ac558723c4054844043a17443ef02f94791d57851379cef51e189df5b0ed3eb77ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -993,7 +1412,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Profiler
-    m_Image: {fileID: 248956144125838126, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3113586994723608586, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
