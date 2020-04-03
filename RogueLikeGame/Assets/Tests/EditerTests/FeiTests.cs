@@ -10,6 +10,7 @@ namespace Tests
     public class FeiTests
     {
         string[] fei1;
+        string[] fei2;
 
         [OneTimeSetUp]
         public void FeiSetup() {
@@ -25,6 +26,27 @@ namespace Tests
                 "◆◇　◆　◆　　階　◆",
                 "◆　◇　◇　◇　　　◆",
                 "◆◆◆◆◆◆◆◆◆◆◆"
+            };
+
+            fei2 = new string[] {
+                "◆◆◆◆◆◆◆◆◆◆◆　　　　　",
+                "◆　　　◆◆◆　　　◆　　　　　",
+                "◆　　試☆☆☆　　　◆　　　　　",
+                "◆　　　◆◆◆　　　◆　　　　　",
+                "◆◆◆◆◆◆◆　　　◆　　　　　",
+                "　　　　　　◆　　　◆　　　　　",
+                "　　　　　　◆◆☆◆◆　　　　　",
+                "　　　　　　　◆☆◆　　　　　　",
+                "　　　　　　　◆☆◆　　　　　　",
+                "　　　　　　　◆☆◆◆◆◆◆◆◆",
+                "　　　　　　　◆☆☆☆☆☆☆☆◆",
+                "　　　　　　　◆◆☆☆☆☆☆☆◆",
+                "　　　　　　　◆◆☆☆☆☆☆◆◆",
+                "　　　　　　　◆◆◆☆☆☆☆◆◆",
+                "　　　　　　　◆◆◆☆☆☆◆◆◆",
+                "　　　　　　　◆◆◆◆☆☆◆◆◆",
+                "　　　　　　　◆◆◆◆階◆◆◆◆",
+                "　　　　　　　◆◆◆◆◆◆◆◆◆"
             };
         }
 
@@ -53,6 +75,8 @@ namespace Tests
             floor.PrintFloor();
         }
 
+        
+
         [Test]
         public void Test_Fei1() {
             var floor = new Floor(fei1);
@@ -73,6 +97,13 @@ namespace Tests
             player.Move(DirectionExtend.GetDirections(correctMoves));
             Assert.AreEqual((8, 8), player.Position);
 
+        }
+
+        [Test]
+        public void Test_Fei2() {
+            var floor = new Floor(fei2);
+            var player = floor.Player;
+            floor.PrintFloor();
         }
     }
 }

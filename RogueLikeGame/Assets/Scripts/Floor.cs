@@ -11,10 +11,14 @@ public class Floor {
         Player = new Player(this);
 
         floorSize.x = floorData[0].Length;
+        foreach (var data in floorData)
+            if (floorSize.x < data.Length) floorSize.x = data.Length;
+
         floorSize.y = floorData.Length;
 
         for (var x = 0; x < floorSize.x; x++) {
             for (var y = 0; y < floorSize.y; y++) {
+                Debug.Log("(" + x + ", " + y + ")");
                 var data = floorData[y].ToCharArray()[x];
                 TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add((x, y), terrain);
