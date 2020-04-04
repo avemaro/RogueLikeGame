@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
     int durability = 1;
-    Creature hit;
 
     private Item(Floor floor, Cell cell, char data) {
         this.floor = floor;
@@ -32,25 +31,23 @@ public class Item : Stuff, IEquatable<Item> {
                 nextCell.type != TerrainType.water) break;
 
             var enemy = floor.GetEnemy(nextCell.x, nextCell.y);
-            if (enemy != null) {
-                hit = enemy;
-
-                if (ID == '草') {
-                    enemy.IsAttacked();
-                    break;
-                }
-                if (ID == '杖') {
-                    var temp = player.Position;
-                    player.Position = enemy.Position;
-                    enemy.Position = temp;
-                    break;
-                }
-            }
-
-            if (ID == '吹' && hit != null) {
-                hit.Position = nextCell;
-            }
+            if (enemy == null) continue;
+            if (Work(player, enemy)) break;
         }
+        return true;
+    }
+
+    bool Work(Player player, Enemy enemy) {
+        if (ID == '草')
+            enemy.IsAttacked();
+        if (ID == '杖') {
+            var temp = player.Position;
+            player.Position = enemy.Position;
+            enemy.Position = temp;
+        }
+        if (ID == '吹')
+            enemy.Fly(player.direction);
+
         return true;
     }
 
