@@ -30,7 +30,7 @@ namespace Tests
             var floor = new Floor(data);
             var player = floor.Player;
             var item = floor.GetItem(3, 5);
-            floor.PrintFloor();
+            Assert.AreEqual(data, floor.PrintFloor());
 
             player.Move(Direction.up);
             floor.PrintFloor();

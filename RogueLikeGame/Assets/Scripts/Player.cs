@@ -6,7 +6,7 @@ public class Player {
     public Cell Position { get; set; }
     Direction direction;
 
-    public List<Item> Items { get; private set; }
+    public List<Item> Items { get; private set; } = new List<Item>();
 
     public Player(Floor floor) {
         this.floor = floor;
@@ -22,6 +22,9 @@ public class Player {
 
         if (!IsRegalMove()) return false;
         Position = Position.Next(direction);
+
+        Items.Add(new Item(floor, new Cell(0, 0)) );
+
         return true;
     }
 
