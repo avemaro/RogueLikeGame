@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}|">
   <MonoDevelop.Ide.ItemProperties.EditerTests PreferredExecutionTarget="999cbd92-bc3b-4bbf-ac6e-14d63fb3dcd0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tests/EditerTests/FeiTests/Fei2.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
       <File FileName="Assets/Scripts/Player.cs" Line="45" Column="1" />
-      <File FileName="Assets/Scripts/Floor.cs" Line="78" Column="2" />
+      <File FileName="Assets/Scripts/Floor.cs" Line="61" Column="24" />
       <File FileName="Assets/Scripts/Cell.cs" Line="56" Column="2" />
+      <File FileName="Assets/Scripts/Item.cs" Line="6" Column="1" />
       <File FileName="Assets/Tests/EditerTests/FeiTests/Fei1.cs" Line="60" Column="44" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei2.cs" Line="40" Column="41" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei3.cs" Line="27" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei2.cs" Line="38" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei3.cs" Line="42" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

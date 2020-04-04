@@ -29,7 +29,7 @@ namespace Tests
         public void PlayerPickUpItem() {
             var floor = new Floor(data);
             var player = floor.Player;
-            var item = floor.GetStuff(3, 5);
+            var item = floor.GetItem(3, 5);
             floor.PrintFloor();
 
             player.Move(Direction.up);

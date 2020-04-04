@@ -30,6 +30,7 @@ public class Floor {
         }
     }
 
+    #region terrain
     public TerrainCell GetTerrainCell(Cell to) {
         foreach (var terrain in terrains)
             if (terrain.Equals(to.Tuple)) return terrain;
@@ -62,8 +63,14 @@ public class Floor {
         return terrains;
 
     }
+    #endregion
 
-        public void PrintFloor() {
+    public Item GetItem(int x, int y) {
+        return new Item();
+    }
+
+
+    public void PrintFloor() {
         for (var y = 0; y < floorSize.y; y++) {
             var str = "";
             for (var x = 0; x < floorSize.x; x++) {

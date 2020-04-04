@@ -6,6 +6,8 @@ public class Player {
     public Cell Position { get; set; }
     Direction direction;
 
+    public List<Item> Items { get; private set; }
+
     public Player(Floor floor) {
         this.floor = floor;
     }
