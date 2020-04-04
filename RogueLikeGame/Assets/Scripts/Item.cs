@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
-    readonly Floor floor;
-    public Cell Position { get; set; }
+    int durability = 1;
 
     private Item(Floor floor, Cell cell, char data) {
         this.floor = floor;
         Position = cell;
         ID = data;
+        if (data == '杖') durability = 3;
     }
 
     public new static Item Create(Floor floor, Cell cell, char data) {
@@ -19,7 +19,8 @@ public class Item : Stuff, IEquatable<Item> {
     }
 
     public bool Use(Player player) {
-        if (ID == '草') player.Items.Remove(this);
+        durability--;
+        if (durability <= 0) player.Items.Remove(this);
 
         var nextCell = floor.GetTerrainCell(player.Position);
 
