@@ -9,9 +9,11 @@ namespace Tests
     public class Fei7
     {
         string[] data;
+        Floor floor;
+        Player player;
 
-        [OneTimeSetUp]
-        public void OneTimeSetUp() {
+        [SetUp]
+        public void SetUp() {
             data = new string[] {
                 "◆◆◆◆◆◆◆◆◆",
                 "◆Ｇ　　　　　Ｇ◆",
@@ -23,12 +25,27 @@ namespace Tests
                 "◆Ｇ　試巻　　　◆",
                 "◆◆◆◆◆◆◆◆◆"
             };
+            floor = new Floor(data);
+            player = floor.Player;
         }
 
         [Test]
         public void Test_floorHasPrinted() {
-            var floor = new Floor(data);
             Assert.AreEqual(data, floor.PrintFloor());
+        }
+
+        [Test]
+        public void Test_Fei7_Fail() {
+            player.Move(2, 2, 2, 1);
+            Assert.AreNotEqual(floor.StairPosition, player.Position);
+        }
+
+        [Test]
+        public void Test_Fei7_Pass() {
+            player.Move(2);
+            player.Use(0);
+            player.Move(2, 2, 1);
+            Assert.AreEqual(floor.StairPosition, player.Position);
         }
     }
 }
