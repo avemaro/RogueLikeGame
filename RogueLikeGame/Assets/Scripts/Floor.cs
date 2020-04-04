@@ -27,11 +27,12 @@ public class Floor {
                 TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add(new TerrainCell(this, cell, terrain));
 
-                if (data == '杖') items.Add(new Item(this, cell));
-                if (data == '草') items.Add(new Item(this, cell));
-                if (data == 'マ') enemies.Add(new Enemy(this, cell));
                 if (data == '試') Player.Position = cell;
                 if (data == '階') StairPosition = cell;
+
+                var stuff = Stuff.Create(this, cell, data);
+                if (stuff is Item) items.Add((Item)stuff);
+                if (stuff is Enemy) enemies.Add((Enemy)stuff);
             }
         }
     }
@@ -82,6 +83,14 @@ public class Floor {
     }
     #endregion
 
+    public Stuff GetStuff(int x, int y) {
+        var item = GetItem(x, y);
+        if (item != null) return item;
+        var enemy = GetEnemy(x, y);
+        if (enemy != null) return enemy;
+        return null;
+    }
+
     public Item GetItem(int x, int y) {
         foreach (var item in items)
             if (item.Position == (x, y)) return item;
@@ -111,9 +120,8 @@ public class Floor {
             for (var x = 0; x < floorSize.x; x++) {
                 char data = (char)GetTerrainCell(new Cell(x, y)).type;
 
-                if (GetItem(x, y) != null) data = '杖';
-                if (GetItem(x, y) != null) data = '草';
-                if (GetEnemy(x, y) != null) data = 'マ';
+                var stuff = GetStuff(x, y);
+                if (stuff != null) data = stuff.ID;
                 if (StairPosition == (x, y)) data = '階';
                 if (Player.Position == (x, y)) data = '試';
                 str += data;

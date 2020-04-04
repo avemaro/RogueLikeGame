@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy: Creature {
-    public Enemy(Floor floor, Cell cell) {
+public class Enemy : Creature {
+    private Enemy(Floor floor, Cell cell, char data) {
         this.floor = floor;
         Position = cell;
+        ID = data;
+    }
+
+    public new static Enemy Create(Floor floor, Cell cell, char data) {
+        if (data != 'マ') return null;
+        return new Enemy(floor, cell, data);
     }
 
     public void Work() {

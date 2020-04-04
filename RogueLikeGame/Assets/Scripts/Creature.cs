@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Creature {
+public abstract class Creature: Stuff {
     protected Floor floor;
     public Cell Position { get; set; }
     public Direction direction;

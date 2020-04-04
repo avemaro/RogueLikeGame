@@ -3,14 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : IEquatable<Item> {
+public class Item : Stuff, IEquatable<Item> {
     readonly Floor floor;
     public Cell Position { get; set; }
-    public int ID { get; private set; }
 
-    public Item(Floor floor, Cell cell) {
+    private Item(Floor floor, Cell cell, char data) {
         this.floor = floor;
         Position = cell;
+        ID = data;
+    }
+
+    public new static Item Create(Floor floor, Cell cell, char data) {
+        if (data != '草' && data != '杖') return null;
+        return new Item(floor, cell, data);
     }
 
     public bool Use(Player player) {

@@ -25,7 +25,7 @@ namespace Tests {
         public void Test_Fei4() {
             var floor = new Floor(data);
             var player = floor.Player;
-            floor.PrintFloor();
+            Assert.AreEqual(data, floor.PrintFloor());
 
             player.Move(Direction.right);
             player.Use(0);
