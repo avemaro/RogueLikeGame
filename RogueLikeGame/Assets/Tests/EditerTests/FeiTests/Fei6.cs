@@ -16,7 +16,7 @@ namespace Tests
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
                 "◆　　　　　　罠　　　罠　　　　◆",
                 "◆　　　　　　◇　◆　◇　◆　　◆",
-                "◆　　　　　　罠 罠 罠 罠　　◆",
+                "◆　　　　　　罠　罠　罠　罠　　◆",
                 "◆　　　試　　◆　◇　◆　◇　　◆",
                 "◆マ　　眼　　　　罠　　　罠階　◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
@@ -46,7 +46,17 @@ namespace Tests
 
             player.Move(Direction.down);
             player.Use(0);
-            Assert.AreEqual(data, floor.PrintFloor());
+
+            string[] expected = {
+                "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
+                "◆　　　　　　罠　　　罠　　　　◆",
+                "◆　　　　　　◇　◆　◇　◆　　◆",
+                "◆　　　　　　罠　罠　罠　罠　　◆",
+                "◆　　　　　　◆　◇　◆　◇　　◆",
+                "◆マ　　試　　　　罠　　　罠階　◆",
+                "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
+            };
+            Assert.AreEqual(expected, floor.PrintFloor());
         }
     }
 }

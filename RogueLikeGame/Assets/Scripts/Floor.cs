@@ -10,6 +10,7 @@ public class Floor {
 
     readonly List<Enemy> enemies = new List<Enemy>();
     readonly List<Item> items = new List<Item>();
+    public List<Trap> Traps { get; private set; } = new List<Trap>();
 
     public Floor(string[] floorData) {
         Player = new Player(this);
@@ -33,6 +34,7 @@ public class Floor {
                 var stuff = Stuff.Create(this, cell, data);
                 if (stuff is Item) items.Add((Item)stuff);
                 if (stuff is Enemy) enemies.Add((Enemy)stuff);
+                if (stuff is Trap) Traps.Add((Trap)stuff);
             }
         }
     }
@@ -88,6 +90,8 @@ public class Floor {
         if (item != null) return item;
         var enemy = GetEnemy(x, y);
         if (enemy != null) return enemy;
+        var trap = GetTrap(x, y);
+        if (trap != null) return trap;
         return null;
     }
 
@@ -97,15 +101,21 @@ public class Floor {
         return null;
     }
 
-
-    public void Remove(Item item) {
-        items.Remove(item);
-    }
-
     public Enemy GetEnemy(int x, int y) {
         foreach (var enemy in enemies)
             if (enemy.Position == (x, y)) return enemy;
         return null;
+    }
+
+    public Trap GetTrap(int x, int y) {
+        foreach (var trap in Traps)
+            if (trap.Position == (x, y)) return trap;
+        return null;
+    }
+
+
+    public void Remove(Item item) {
+        items.Remove(item);
     }
 
     public void Remove(Enemy enemy) {
@@ -121,7 +131,10 @@ public class Floor {
                 char data = (char)GetTerrainCell(new Cell(x, y)).type;
 
                 var stuff = GetStuff(x, y);
-                if (stuff != null) data = stuff.ID;
+                if (stuff != null) {
+                    data = stuff.ID;
+                    if (!stuff.isVisible) data = '　';
+                }
                 if (StairPosition == (x, y)) data = '階';
                 if (Player.Position == (x, y)) data = '試';
                 str += data;

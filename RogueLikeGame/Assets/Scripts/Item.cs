@@ -23,6 +23,11 @@ public class Item : Stuff, IEquatable<Item> {
         durability--;
         if (durability <= 0) player.Items.Remove(this);
 
+        if (ID == '眼') {
+            foreach (var trap in floor.Traps)
+                trap.isVisible = true;
+        }
+
         var nextCell = floor.GetTerrainCell(player.Position);
 
         while (true) {
