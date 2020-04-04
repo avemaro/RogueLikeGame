@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : Creature {
-    private Enemy(Floor floor, Cell cell, char data) {
-        this.floor = floor;
-        Position = cell;
-        ID = data;
-    }
-
     static readonly List<char> IDs = new List<char>() { 'マ', 'ギ' };
     public new static Enemy Create(Floor floor, Cell cell, char data) {
         if (!IDs.Contains(data)) return null;
         return new Enemy(floor, cell, data);
+    }
+
+    private Enemy(Floor floor, Cell cell, char data) {
+        this.floor = floor;
+        Position = cell;
+        ID = data;
     }
 
     public void Work() {

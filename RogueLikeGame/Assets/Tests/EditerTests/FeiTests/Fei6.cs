@@ -58,5 +58,14 @@ namespace Tests
             };
             Assert.AreEqual(expected, floor.PrintFloor());
         }
+
+        [Test]
+        public void Test_TrapWorks() {
+            var floor = new Floor(data);
+            var player = floor.Player;
+
+            player.Move(3, 2, 2, 2, 2);
+            Assert.AreEqual(State.Dead, player.State);
+        }
     }
 }

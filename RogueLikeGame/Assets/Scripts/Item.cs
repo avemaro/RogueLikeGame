@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
+    static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹', '眼' };
+    public new static Item Create(Floor floor, Cell cell, char data) {
+        if (!IDs.Contains(data)) return null;
+        return new Item(floor, cell, data);
+    }
+
     int durability = 1;
 
     private Item(Floor floor, Cell cell, char data) {
@@ -13,12 +19,6 @@ public class Item : Stuff, IEquatable<Item> {
         if (data == '杖') durability = 3;
     }
 
-    static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹', '眼' };
-    public new static Item Create(Floor floor, Cell cell, char data) {
-        if (!IDs.Contains(data)) return null;
-        return new Item(floor, cell, data);
-    }
-
     public bool Use(Player player) {
         durability--;
         if (durability <= 0) player.Items.Remove(this);
@@ -26,6 +26,7 @@ public class Item : Stuff, IEquatable<Item> {
         if (ID == '眼') {
             foreach (var trap in floor.Traps)
                 trap.isVisible = true;
+            return true;
         }
 
         var nextCell = floor.GetTerrainCell(player.Position);
