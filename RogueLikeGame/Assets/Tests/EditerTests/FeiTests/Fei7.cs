@@ -14,7 +14,7 @@ namespace Tests
         public void OneTimeSetUp() {
             data = new string[] {
                 "◆◆◆◆◆◆◆◆◆",
-                "◆Ｇ     Ｇ◆",
+                "◆Ｇ　　　　　Ｇ◆",
                 "◆　武ＧマＧギ　◆",
                 "◆Ｇ武　マ　ギＧ◆",
                 "◆　武　マ　ギ　◆",

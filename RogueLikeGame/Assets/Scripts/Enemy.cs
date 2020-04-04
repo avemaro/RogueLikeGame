@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : Creature {
-    static readonly List<char> IDs = new List<char>() { 'マ', 'ギ' };
+    static readonly List<char> IDs = new List<char>() { 'マ', 'ギ', '武' };
     public new static Enemy Create(Floor floor, Cell cell, char data) {
         if (!IDs.Contains(data)) return null;
         return new Enemy(floor, cell, data);
