@@ -32,19 +32,23 @@ public class Item : Stuff, IEquatable<Item> {
                 nextCell.type != TerrainType.water) break;
 
             var enemy = floor.GetEnemy(nextCell.x, nextCell.y);
-            if (enemy == null) continue;
+            if (enemy != null) {
+                hit = enemy;
 
-            if (ID == '草') {
-                enemy.IsAttacked();
-                break;
+                if (ID == '草') {
+                    enemy.IsAttacked();
+                    break;
+                }
+                if (ID == '杖') {
+                    var temp = player.Position;
+                    player.Position = enemy.Position;
+                    enemy.Position = temp;
+                    break;
+                }
             }
-            if (ID == '杖') {
-                var temp = player.Position;
-                player.Position = enemy.Position;
-                enemy.Position = temp;
-                break;
-            }
-            if (ID == '吹') {
+
+            if (ID == '吹' && hit != null) {
+                hit.Position = nextCell;
             }
         }
         return true;
