@@ -27,6 +27,7 @@ public class Floor {
                 TerrainType terrain = TerrainTypeExtend.GetTrrainType(data);
                 terrains.Add(new TerrainCell(this, cell, terrain));
 
+                if (data == '杖') items.Add(new Item(this, cell));
                 if (data == '草') items.Add(new Item(this, cell));
                 if (data == 'マ') enemies.Add(new Enemy(this, cell));
                 if (data == '試') Player.Position = cell;
@@ -110,6 +111,7 @@ public class Floor {
             for (var x = 0; x < floorSize.x; x++) {
                 char data = (char)GetTerrainCell(new Cell(x, y)).type;
 
+                if (GetItem(x, y) != null) data = '杖';
                 if (GetItem(x, y) != null) data = '草';
                 if (GetEnemy(x, y) != null) data = 'マ';
                 if (StairPosition == (x, y)) data = '階';

@@ -27,4 +27,8 @@ public class Player: Creature {
         if (item.Use(this))
             Items.RemoveAt(index);
     }
+
+    public void Throw(int index) {
+
+    }
 }
