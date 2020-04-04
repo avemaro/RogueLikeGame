@@ -42,6 +42,8 @@ public class Floor {
     public void Work() {
         for (var i = 0; i < enemies.Count; i++)
             enemies[i].Work();
+        for (var i = 0; i < Traps.Count; i++)
+            Traps[i].Work();
     }
 
     #region terrain

@@ -15,4 +15,9 @@ public class Trap: Stuff {
         ID = data;
         isVisible = false;
     }
+
+    public void Work() {
+        if (floor.Player.Position != Position) return;
+        floor.Player.IsAttacked();
+    }
 }
