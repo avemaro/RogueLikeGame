@@ -47,5 +47,13 @@ namespace Tests
             player.Move(2, 2, 1);
             Assert.AreEqual(floor.StairPosition, player.Position);
         }
+
+        [Test]
+        public void Test_EnemiesMove() {
+            var enemy = floor.GetEnemy(6, 4);
+            player.Move(2);
+            Assert.AreEqual((5, 5), enemy.Position);
+
+        }
     }
 }

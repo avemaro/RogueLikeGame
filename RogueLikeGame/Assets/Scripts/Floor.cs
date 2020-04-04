@@ -40,10 +40,10 @@ public class Floor {
     }
 
     public void Work() {
-        for (var i = 0; i < enemies.Count; i++)
-            enemies[i].Work();
-        for (var i = 0; i < Traps.Count; i++)
-            Traps[i].Work();
+        foreach (var enemy in enemies)
+            enemy.Work();
+        foreach (var trap in Traps)
+            trap.Work();
     }
 
     #region terrain
@@ -120,8 +120,8 @@ public class Floor {
         items.Remove(item);
     }
 
-    public void Remove(Enemy enemy) {
-        enemies.Remove(enemy);
+    public void Remove(Creature creature) {
+        if (creature is Enemy) enemies.Remove((Enemy)creature);
     }
 
 

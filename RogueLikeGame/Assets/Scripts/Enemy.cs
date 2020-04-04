@@ -16,9 +16,6 @@ public class Enemy : Creature {
     }
 
     public void Work() {
-        if (State == State.Dead)
-            floor.Remove(this);
-
         foreach (var direction in DirectionExtend.AllCases()) {
             var cell = Position.Next(direction);
             if (floor.Player.Position != cell) continue;
