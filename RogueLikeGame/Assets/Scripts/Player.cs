@@ -5,7 +5,6 @@ public class Player {
     public Floor floor;
     public Cell Position { get; set; }
     public Direction direction;
-    public State State { get; private set; }
 
     public List<Item> Items { get; private set; } = new List<Item>();
 
@@ -25,7 +24,6 @@ public class Player {
         Position = Position.Next(direction);
 
         PickUp();
-        floor.Work();
 
         return true;
     }
@@ -60,9 +58,5 @@ public class Player {
         var item = Items[index];
         if (item.Use(this))
             Items.RemoveAt(index);
-    }
-
-    public void IsAttacked() {
-        State = State.Dead;
     }
 }

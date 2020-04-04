@@ -15,7 +15,6 @@ public class Item : IEquatable<Item> {
 
     public bool Use(Player player) {
         var nextCell = floor.GetTerrainCell(player.Position);
-
         while (true) {
             nextCell = nextCell.Next(player.direction);
             if (nextCell.type != TerrainType.land &&

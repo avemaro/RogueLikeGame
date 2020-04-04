@@ -12,7 +12,7 @@ public static class DirectionExtend {
         Direction.upLeft };
     }
 
-    public static List<Direction> GetDirections(params int[] indexes) {
+    public static List<Direction> GetDirections(int[] indexes) {
         var directions = new List<Direction>();
         foreach (var index in indexes)
             directions.Add(AllCases()[index]);

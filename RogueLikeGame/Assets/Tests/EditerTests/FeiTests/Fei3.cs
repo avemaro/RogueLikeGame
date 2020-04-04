@@ -44,6 +44,7 @@ namespace Tests
         public void PlayerUseItem() {
             var floor = new Floor(data);
             var player = floor.Player;
+            var item = floor.GetItem(3, 5);
             var enemy = floor.GetEnemy(4, 3);
             Assert.NotNull(enemy);
 
@@ -62,21 +63,6 @@ namespace Tests
             player.Use(0);
             Assert.AreEqual(0, player.Items.Count);
             Assert.AreEqual(State.Dead, enemy.State);
-        }
-
-        [Test]
-        public void PlayerHasAttacked() {
-            var floor = new Floor(data);
-            var player = floor.Player;
-
-            int[] moves = { 2, 2, 2, 2, 2,
-                            2, 2, 0, 0, 0,
-                            0, 6, 6, 6, 6,
-                            6 };
-            player.Move(DirectionExtend.GetDirections(moves));
-            Debug.Log(player.Position);
-            floor.PrintFloor();
-            Assert.AreEqual(State.Dead, player.State);
         }
     }
 }
