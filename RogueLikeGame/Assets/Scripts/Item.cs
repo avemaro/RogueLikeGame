@@ -13,7 +13,7 @@ public class Item : Stuff, IEquatable<Item> {
         if (data == '杖') durability = 3;
     }
 
-    static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹' };
+    static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹', '眼' };
     public new static Item Create(Floor floor, Cell cell, char data) {
         if (!IDs.Contains(data)) return null;
         return new Item(floor, cell, data);
