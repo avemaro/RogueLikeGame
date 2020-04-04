@@ -34,6 +34,14 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
         return other.x == x && other.y == y;
     }
 
+    public static bool operator ==(Cell lhs, Cell rhs) {
+        return lhs.Equals(rhs);
+    }
+
+    public static bool operator !=(Cell lhs, Cell rhs) {
+        return !lhs.Equals(rhs);
+    }
+
     public static bool operator ==(Cell lhs, (int x, int y) rhs) {
         return lhs.x == rhs.x && lhs.y == rhs.y;
     }

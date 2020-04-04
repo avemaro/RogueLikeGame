@@ -34,6 +34,11 @@ public class Floor {
         }
     }
 
+    public void Work() {
+        foreach (var enemy in enemies)
+            enemy.Work();
+    }
+
     #region terrain
     public TerrainCell GetTerrainCell(Cell to) {
         foreach (var terrain in terrains)
