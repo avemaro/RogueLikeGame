@@ -35,8 +35,8 @@ public class Floor {
     }
 
     public void Work() {
-        foreach (var enemy in enemies)
-            enemy.Work();
+        for (var i = 0; i < enemies.Count; i++)
+            enemies[i].Work();
     }
 
     #region terrain
@@ -53,6 +53,7 @@ public class Floor {
 
             foreach (var direction in DirectionExtend.AllCases()) {
                 nextCell = GetTerrainCell(to).Next(direction);
+                if (nextCell.type != TerrainType.breakableWall) continue;
                 IsAttacked(nextCell);
             }
 
@@ -95,6 +96,11 @@ public class Floor {
             if (enemy.Position == (x, y)) return enemy;
         return null;
     }
+
+    public void Remove(Enemy enemy) {
+        enemies.Remove(enemy);
+    }
+
 
     public List<string> PrintFloor() {
         var floorData = new List<string>();

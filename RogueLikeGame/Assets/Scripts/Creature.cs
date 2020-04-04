@@ -18,6 +18,8 @@ public abstract class Creature {
     }
 
     public virtual bool Move(Direction direction) {
+        if (State == State.Dead) return false;
+
         this.direction = direction;
 
         if (!IsRegalMove()) return false;
@@ -31,6 +33,11 @@ public abstract class Creature {
         foreach (var direction in directions)
             if (!Move(direction)) hasMoved = false;
         return hasMoved;
+    }
+
+    public bool Move(params int[] indexes) {
+        var directions = DirectionExtend.GetDirections(indexes);
+        return Move(directions);
     }
 
     bool IsRegalMove() {

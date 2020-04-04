@@ -78,5 +78,37 @@ namespace Tests
             floor.PrintFloor();
             Assert.AreEqual(State.Dead, player.State);
         }
+
+        [Test]
+        public void Test_Fei3() {
+            var floor = new Floor(data);
+            var player = floor.Player;
+
+            int[] moves = { 2, 2, 2, 2, 2,
+                            2, 2, 0, 0, 0,
+                            0, 6, 6, 6, 6,
+                            6, 6, 6, 6, 7,
+                            7};
+            player.Move(moves);
+            Assert.AreEqual(State.Dead, player.State);
+            Assert.AreNotEqual(floor.StairPosition, player.Position);
+
+            floor = new Floor(data);
+            player = floor.Player;
+
+            moves = new int[] { 0, 2, 0 };
+            player.Move(moves);
+            player.Use(0);
+            floor.PrintFloor();
+
+            moves = new int[] { 3, 2, 2, 2, 2,
+                                2, 0, 0, 0, 0,
+                                6, 6, 6, 6, 6,
+                                6, 6, 6, 7 };
+            player.Move(moves);
+            floor.PrintFloor();
+            Assert.AreEqual(State.Alive, player.State);
+            Assert.AreEqual(floor.StairPosition, player.Position);
+        }
     }
 }

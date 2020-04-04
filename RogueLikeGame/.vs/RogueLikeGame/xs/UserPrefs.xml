@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}|">
   <MonoDevelop.Ide.ItemProperties.EditerTests PreferredExecutionTarget="db235db1-4c3c-47f5-996e-2abdd823e907" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Creature.cs">
     <Files>
       <File FileName="Assets/Scripts/Player.cs" Line="15" Column="21" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="10" Column="1" />
@@ -10,10 +10,10 @@
       <File FileName="Assets/Scripts/State.cs" />
       <File FileName="Assets/Scripts/TerrainCell.cs" />
       <File FileName="Assets/Scripts/Direction.cs" />
+      <File FileName="Assets/Scripts/Creature.cs" Line="36" Column="23" />
       <File FileName="Assets/Tests/EditerTests/FeiTests/Fei1.cs" Line="60" Column="44" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei2.cs" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei3.cs" NotebookId="1" />
-      <File FileName="Assets/Scripts/Creature.cs" Line="25" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei2.cs" Line="38" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei3.cs" Line="95" Column="32" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
