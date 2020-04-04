@@ -24,11 +24,13 @@ public class Player: Creature {
 
     public void Use(int index) {
         var item = Items[index];
-        if (item.Use(this))
-            Items.RemoveAt(index);
+        item.Use(this);
+        floor.Work();
     }
 
     public void Throw(int index) {
-
+        var item = Items[index];
+        item.Throw(this);
+        floor.Work();
     }
 }

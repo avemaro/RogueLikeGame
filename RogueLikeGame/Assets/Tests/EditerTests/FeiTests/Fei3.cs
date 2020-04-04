@@ -49,6 +49,7 @@ namespace Tests
 
             player.Move(Direction.up);
             player.Use(0);
+            floor.PrintFloor();
             Assert.AreEqual(0, player.Items.Count);
             Assert.AreEqual(State.Alive, enemy.State);
 

@@ -29,11 +29,13 @@ namespace Tests {
 
             player.Move(Direction.right);
             player.Use(0);
-            Assert.AreEqual((7, 3), player.Position);
+            floor.PrintFloor();
+            Assert.AreEqual((6, 3), player.Position);
             player.Use(0);
-            Assert.AreEqual((11, 3), player.Position);
+            Assert.AreEqual((10, 3), player.Position);
             player.Throw(0);
-            Assert.AreEqual((15, 3), player.Position);
+            floor.PrintFloor();
+            Assert.AreEqual((14, 3), player.Position);
             player.Move(Direction.right);
             Assert.AreEqual(floor.StairPosition, player.Position);
         }

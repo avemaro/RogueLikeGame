@@ -19,6 +19,8 @@ public class Item : Stuff, IEquatable<Item> {
     }
 
     public bool Use(Player player) {
+        if (ID == '草') player.Items.Remove(this);
+
         var nextCell = floor.GetTerrainCell(player.Position);
 
         while (true) {
@@ -28,10 +30,20 @@ public class Item : Stuff, IEquatable<Item> {
 
             var enemy = floor.GetEnemy(nextCell.x, nextCell.y);
             if (enemy == null) continue;
-            enemy.IsAttacked();
+
+            if (ID == '草') enemy.IsAttacked();
+            if (ID == '杖') {
+                var temp = player.Position;
+                player.Position = enemy.Position;
+                enemy.Position = temp;
+            }
             break;
         }
         return true;
+    }
+
+    public bool Throw(Player player) {
+        return Use(player);
     }
 
     public bool Equals(Item other) {
