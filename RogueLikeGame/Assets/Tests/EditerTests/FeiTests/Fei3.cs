@@ -16,7 +16,7 @@ namespace Tests
                 "◆◆◆◆◆◆◆　　　　　",
                 "◆階　　　　◆◆◆◆◆◆",
                 "◆　　　　　　　　　　◆",
-                "◆　　マ　　◆◆◆◆　◆",
+                "◆　　　マ　◆◆◆◆　◆",
                 "◆◆◆◆◇◆◆◆◆◆　◆",
                 "◆　　草　　◆◆◆◆　◆",
                 "◆　　試　　　　　　　◆",
@@ -45,7 +45,7 @@ namespace Tests
             var floor = new Floor(data);
             var player = floor.Player;
             var item = floor.GetItem(3, 5);
-            var enemy = floor.GetEnemy(3, 3);
+            var enemy = floor.GetEnemy(4, 3);
             Assert.NotNull(enemy);
 
             player.Move(Direction.up);
@@ -55,12 +55,11 @@ namespace Tests
 
             floor = new Floor(data);
             player = floor.Player;
-            enemy = floor.GetEnemy(3, 3);
+            enemy = floor.GetEnemy(4, 3);
 
             player.Move(Direction.up);
             player.Move(Direction.right);
             player.Move(Direction.up);
-            Debug.Log(player.Position);
             player.Use(0);
             Assert.AreEqual(0, player.Items.Count);
             Assert.AreEqual(State.Dead, enemy.State);

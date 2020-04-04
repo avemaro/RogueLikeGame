@@ -16,7 +16,7 @@ public class TerrainCell : Cell {
         this.type = type;
     }
 
-    public override Cell Next(Direction direction) {
+    new public TerrainCell Next(Direction direction) {
         var next = base.Next(direction);
         return floor.GetTerrainCell(next);
     }

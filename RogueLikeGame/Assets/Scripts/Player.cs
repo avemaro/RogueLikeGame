@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Player {
     public Floor floor;
     public Cell Position { get; set; }
-    Direction direction;
+    public Direction direction;
 
     public List<Item> Items { get; private set; } = new List<Item>();
 

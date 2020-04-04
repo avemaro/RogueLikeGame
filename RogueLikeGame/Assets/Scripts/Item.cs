@@ -14,7 +14,17 @@ public class Item : IEquatable<Item> {
     }
 
     public bool Use(Player player) {
-        if (player.Position == (4, 5)) floor.GetEnemy(3, 3).IsAttacked();
+        var nextCell = floor.GetTerrainCell(player.Position);
+        while (true) {
+            nextCell = nextCell.Next(player.direction);
+            if (nextCell.type != TerrainType.land &&
+                nextCell.type != TerrainType.water) break;
+
+            var enemy = floor.GetEnemy(nextCell.x, nextCell.y);
+            if (enemy == null) continue;
+            enemy.IsAttacked();
+            break;
+        }
         return true;
     }
 

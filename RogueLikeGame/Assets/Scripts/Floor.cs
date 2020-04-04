@@ -47,7 +47,7 @@ public class Floor {
         nextCell.type = TerrainType.land;
 
         foreach (var direction in DirectionExtend.AllCases()) {
-            nextCell = (TerrainCell)GetTerrainCell(to).Next(direction);
+            nextCell = GetTerrainCell(to).Next(direction);
             IsAttacked(nextCell);
         }
     }
