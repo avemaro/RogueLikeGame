@@ -38,5 +38,15 @@ namespace Tests
             };
             Assert.AreEqual(expected, floor.PrintFloor());
         }
+
+        [Test]
+        public void Test_EyeDropWorks() {
+            var floor = new Floor(data);
+            var player = floor.Player;
+
+            player.Move(Direction.down);
+            player.Use(0);
+            Assert.AreEqual(data, floor.PrintFloor());
+        }
     }
 }
