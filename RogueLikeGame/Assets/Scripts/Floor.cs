@@ -48,13 +48,18 @@ public class Floor {
 
     internal void IsAttacked(Cell to) {
         var nextCell = GetTerrainCell(to);
-        if (nextCell.type != TerrainType.breakableWall) return;
-        nextCell.type = TerrainType.land;
+        if (nextCell.type == TerrainType.breakableWall) {
+            nextCell.type = TerrainType.land;
 
-        foreach (var direction in DirectionExtend.AllCases()) {
-            nextCell = GetTerrainCell(to).Next(direction);
-            IsAttacked(nextCell);
+            foreach (var direction in DirectionExtend.AllCases()) {
+                nextCell = GetTerrainCell(to).Next(direction);
+                IsAttacked(nextCell);
+            }
+
+            return;
         }
+
+        if (Player.Position == to) Player.IsAttacked();
     }
 
     public TerrainType GetTerrain(int x, int y) {
