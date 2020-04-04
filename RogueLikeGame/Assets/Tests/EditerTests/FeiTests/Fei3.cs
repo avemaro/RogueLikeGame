@@ -31,11 +31,13 @@ namespace Tests
             var player = floor.Player;
             var item = floor.GetItem(3, 5);
             Assert.AreEqual(data, floor.PrintFloor());
+            Assert.NotNull(item);
 
             player.Move(Direction.up);
             floor.PrintFloor();
 
             Assert.AreEqual(item, player.Items[0]);
+            Assert.IsNull(floor.GetItem(3, 5));
         }
-    }
+   }
 }

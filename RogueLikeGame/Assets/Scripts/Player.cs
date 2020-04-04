@@ -23,7 +23,7 @@ public class Player {
         if (!IsRegalMove()) return false;
         Position = Position.Next(direction);
 
-        Items.Add(new Item(floor, new Cell(0, 0)) );
+        PickUp();
 
         return true;
     }
@@ -45,5 +45,12 @@ public class Player {
         if (floor.GetTerrain(forwards).Contains(TerrainType.wall)) return false;
 
         return true;
+    }
+
+    bool PickUp() {
+        var item = floor.GetItem(Position.x, Position.y);
+        floor.Remove(item);
+        if (item != null) Items.Add(item);
+        return item != null;
     }
 }

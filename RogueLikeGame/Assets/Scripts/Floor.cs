@@ -75,6 +75,11 @@ public class Floor {
         return null;
     }
 
+
+    public void Remove(Item item) {
+        items.Remove(item);
+    }
+
     public Enemy GetEnemy(int x, int y) {
         foreach (var enemy in enemies)
             if (enemy.Position == (x, y)) return enemy;
