@@ -41,14 +41,14 @@ public class Floor {
         return null;
     }
 
-    internal void IsAttaced(Cell to) {
+    internal void IsAttacked(Cell to) {
         var nextCell = GetTerrainCell(to);
         if (nextCell.type != TerrainType.breakableWall) return;
         nextCell.type = TerrainType.land;
 
         foreach (var direction in DirectionExtend.AllCases()) {
             nextCell = (TerrainCell)GetTerrainCell(to).Next(direction);
-            IsAttaced(nextCell);
+            IsAttacked(nextCell);
         }
     }
 

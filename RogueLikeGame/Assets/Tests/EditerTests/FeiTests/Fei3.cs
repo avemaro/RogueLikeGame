@@ -60,6 +60,7 @@ namespace Tests
             player.Move(Direction.up);
             player.Move(Direction.right);
             player.Move(Direction.up);
+            Debug.Log(player.Position);
             player.Use(0);
             Assert.AreEqual(0, player.Items.Count);
             Assert.AreEqual(State.Dead, enemy.State);

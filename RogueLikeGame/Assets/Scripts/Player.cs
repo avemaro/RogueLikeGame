@@ -14,7 +14,7 @@ public class Player {
 
     public void Attack() {
         var to = Position.Next(direction);
-        floor.IsAttaced(to);
+        floor.IsAttacked(to);
     }
 
     public bool Move(Direction direction) {
@@ -55,6 +55,8 @@ public class Player {
     }
 
     public void Use(int index) {
-
+        var item = Items[index];
+        if (item.Use(this))
+            Items.RemoveAt(index);
     }
 }

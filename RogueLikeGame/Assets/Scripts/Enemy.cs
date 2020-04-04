@@ -9,4 +9,8 @@ public class Enemy {
     public Enemy(Floor floor, Cell cell) {
         Position = cell;
     }
+
+    public void IsAttacked() {
+        State = State.Dead;
+    }
 }
