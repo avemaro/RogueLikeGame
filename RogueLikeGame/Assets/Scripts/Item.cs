@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : IEquatable<Item> {
-    Floor floor;
+    readonly Floor floor;
     public Cell Position { get; set; }
     public int ID { get; private set; }
 

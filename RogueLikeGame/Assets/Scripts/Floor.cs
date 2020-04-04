@@ -7,8 +7,9 @@ public class Floor {
     readonly List<TerrainCell> terrains = new List<TerrainCell>();
     public Cell StairPosition { get; private set; }
     public Player Player { get; private set; }
-    List<Enemy> enemies = new List<Enemy>();
-    List<Item> items = new List<Item>();
+
+    readonly List<Enemy> enemies = new List<Enemy>();
+    readonly List<Item> items = new List<Item>();
 
     public Floor(string[] floorData) {
         Player = new Player(this);
