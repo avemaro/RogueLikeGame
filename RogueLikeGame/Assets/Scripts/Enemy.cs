@@ -9,8 +9,9 @@ public class Enemy : Creature {
         ID = data;
     }
 
+    static readonly List<char> IDs = new List<char>() { 'マ', 'ギ' };
     public new static Enemy Create(Floor floor, Cell cell, char data) {
-        if (data != 'マ' && data != 'ギ') return null;
+        if (!IDs.Contains(data)) return null;
         return new Enemy(floor, cell, data);
     }
 

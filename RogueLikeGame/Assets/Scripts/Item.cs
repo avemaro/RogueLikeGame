@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
     int durability = 1;
+    Creature hit;
 
     private Item(Floor floor, Cell cell, char data) {
         this.floor = floor;
@@ -13,8 +14,9 @@ public class Item : Stuff, IEquatable<Item> {
         if (data == '杖') durability = 3;
     }
 
+    static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹' };
     public new static Item Create(Floor floor, Cell cell, char data) {
-        if (data != '草' && data != '杖' && data != '巻') return null;
+        if (!IDs.Contains(data)) return null;
         return new Item(floor, cell, data);
     }
 
@@ -32,13 +34,18 @@ public class Item : Stuff, IEquatable<Item> {
             var enemy = floor.GetEnemy(nextCell.x, nextCell.y);
             if (enemy == null) continue;
 
-            if (ID == '草') enemy.IsAttacked();
+            if (ID == '草') {
+                enemy.IsAttacked();
+                break;
+            }
             if (ID == '杖') {
                 var temp = player.Position;
                 player.Position = enemy.Position;
                 enemy.Position = temp;
+                break;
             }
-            break;
+            if (ID == '吹') {
+            }
         }
         return true;
     }
