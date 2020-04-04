@@ -53,4 +53,8 @@ public class Player {
         if (item != null) Items.Add(item);
         return item != null;
     }
+
+    public void Use(int index) {
+
+    }
 }
