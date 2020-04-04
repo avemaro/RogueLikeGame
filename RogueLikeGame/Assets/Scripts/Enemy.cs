@@ -10,7 +10,7 @@ public class Enemy : Creature {
     }
 
     public new static Enemy Create(Floor floor, Cell cell, char data) {
-        if (data != 'マ') return null;
+        if (data != 'マ' && data != 'ギ') return null;
         return new Enemy(floor, cell, data);
     }
 

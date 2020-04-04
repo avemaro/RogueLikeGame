@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}|">
   <MonoDevelop.Ide.ItemProperties.EditerTests PreferredExecutionTarget="db235db1-4c3c-47f5-996e-2abdd823e907" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tests/EditerTests/FeiTests/Fei4.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tests/EditerTests/FeiTests/Fei5.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scripts/Floor.cs" Line="124" Column="52" />
-      <File FileName="Assets/Scripts/Item.cs" Line="13" Column="19" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="29" Column="2" />
+      <File FileName="Assets/Scripts/Player.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/Floor.cs" Line="134" Column="2" />
+      <File FileName="Assets/Scripts/Item.cs" Line="53" Column="2" />
       <File FileName="Assets/Scripts/TerrainCell.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Creature.cs" Line="5" Column="38" />
-      <File FileName="Assets/Scripts/Stuff.cs" Line="6" Column="36" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="5" Column="20" />
+      <File FileName="Assets/Scripts/Creature.cs" Line="53" Column="1" />
+      <File FileName="Assets/Scripts/Stuff.cs" Line="18" Column="1" />
       <File FileName="Assets/Tests/EditerTests/FeiTests/Fei1.cs" Line="79" Column="1" NotebookId="1" />
       <File FileName="Assets/Tests/EditerTests/FeiTests/Fei2.cs" Line="38" Column="1" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei3.cs" Line="44" Column="1" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei4.cs" Line="32" Column="32" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei3.cs" Line="116" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei4.cs" Line="43" Column="2" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei5.cs" Line="19" Column="16" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

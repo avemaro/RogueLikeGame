@@ -14,7 +14,7 @@ public class Item : Stuff, IEquatable<Item> {
     }
 
     public new static Item Create(Floor floor, Cell cell, char data) {
-        if (data != '草' && data != '杖') return null;
+        if (data != '草' && data != '杖' && data != '巻') return null;
         return new Item(floor, cell, data);
     }
 

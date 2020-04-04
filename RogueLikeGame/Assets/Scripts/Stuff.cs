@@ -8,9 +8,9 @@ public abstract class Stuff {
     public char ID { get; protected set; }
 
     public static Stuff Create(Floor floor, Cell cell, char data) {
-        if (data == '草' || data == '杖')
+        if (data == '草' || data == '杖' || data == '巻')
             return Item.Create(floor, cell, data);
-        if (data == 'マ')
+        if (data == 'マ' || data == 'ギ')
             return Enemy.Create(floor, cell, data);
         return null;
     }
