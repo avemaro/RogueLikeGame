@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
     static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹',
-        '眼', 'Ｇ' };
+        '眼', 'Ｇ', '眠' };
     public new static Item Create(Floor floor, Cell cell, char data) {
         if (!IDs.Contains(data)) return null;
         return new Item(floor, cell, data);
@@ -23,6 +23,11 @@ public class Item : Stuff, IEquatable<Item> {
     public bool Use(Player player) {
         durability--;
         if (durability <= 0) player.Items.Remove(this);
+
+        if (ID == '眠') {
+            foreach (var enemy in floor.Enemies)
+                enemy.state = State.Sleep;
+        }
 
         if (ID == '眼') {
             foreach (var trap in floor.Traps)

@@ -8,7 +8,7 @@ public class Floor {
     public Cell StairPosition { get; private set; }
     public Player Player { get; private set; }
 
-    readonly List<Enemy> enemies = new List<Enemy>();
+    public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
     readonly List<Item> items = new List<Item>();
     public List<Trap> Traps { get; private set; } = new List<Trap>();
 
@@ -33,14 +33,14 @@ public class Floor {
 
                 var stuff = Stuff.Create(this, cell, data);
                 if (stuff is Item) items.Add((Item)stuff);
-                if (stuff is Enemy) enemies.Add((Enemy)stuff);
+                if (stuff is Enemy) Enemies.Add((Enemy)stuff);
                 if (stuff is Trap) Traps.Add((Trap)stuff);
             }
         }
     }
 
     public void Work() {
-        foreach (var enemy in enemies)
+        foreach (var enemy in Enemies)
             enemy.Work();
         foreach (var trap in Traps)
             trap.Work();
@@ -53,21 +53,26 @@ public class Floor {
         return null;
     }
 
-    internal void IsAttacked(Cell to) {
+    internal bool IsAttacked(Cell to) {
         var nextCell = GetTerrainCell(to);
         if (nextCell.type == TerrainType.breakableWall) {
             nextCell.type = TerrainType.land;
 
+            var hasAttacked = false;
             foreach (var direction in DirectionExtend.AllCases()) {
                 nextCell = GetTerrainCell(to).Next(direction);
                 if (nextCell.type != TerrainType.breakableWall) continue;
                 IsAttacked(nextCell);
+                hasAttacked = true;
             }
-
-            return;
+            if (hasAttacked) return true;
         }
 
-        if (Player.Position == to) Player.IsAttacked();
+        if (Player.Position == to) {
+            Player.IsAttacked();
+            return true;
+        }
+        return false;
     }
 
     public TerrainType GetTerrain(int x, int y) {
@@ -103,8 +108,12 @@ public class Floor {
         return null;
     }
 
+    public Enemy GetEnemy(Cell cell) {
+        return GetEnemy(cell.x, cell.y);
+    }
+
     public Enemy GetEnemy(int x, int y) {
-        foreach (var enemy in enemies)
+        foreach (var enemy in Enemies)
             if (enemy.Position == (x, y)) return enemy;
         return null;
     }
@@ -121,7 +130,7 @@ public class Floor {
     }
 
     public void Remove(Creature creature) {
-        if (creature is Enemy) enemies.Remove((Enemy)creature);
+        if (creature is Enemy) Enemies.Remove((Enemy)creature);
     }
 
 
@@ -132,12 +141,12 @@ public class Floor {
             for (var x = 0; x < floorSize.x; x++) {
                 char data = (char)GetTerrainCell(new Cell(x, y)).type;
 
+                if (StairPosition == (x, y)) data = '階';
                 var stuff = GetStuff(x, y);
                 if (stuff != null) {
                     data = stuff.ID;
                     if (!stuff.isVisible) data = '　';
                 }
-                if (StairPosition == (x, y)) data = '階';
                 if (Player.Position == (x, y)) data = '試';
                 str += data;
             }

@@ -51,7 +51,7 @@ namespace Tests
             player.Use(0);
             floor.PrintFloor();
             Assert.AreEqual(0, player.Items.Count);
-            Assert.AreEqual(State.Alive, enemy.State);
+            Assert.AreEqual(State.Alive, enemy.state);
 
             floor = new Floor(data);
             player = floor.Player;
@@ -62,7 +62,7 @@ namespace Tests
             player.Move(Direction.up);
             player.Use(0);
             Assert.AreEqual(0, player.Items.Count);
-            Assert.AreEqual(State.Dead, enemy.State);
+            Assert.AreEqual(State.Dead, enemy.state);
         }
 
         [Test]
@@ -77,7 +77,7 @@ namespace Tests
             player.Move(DirectionExtend.GetDirections(moves));
             Debug.Log(player.Position);
             floor.PrintFloor();
-            Assert.AreEqual(State.Dead, player.State);
+            Assert.AreEqual(State.Dead, player.state);
         }
 
         [Test]
@@ -91,7 +91,7 @@ namespace Tests
                             6, 6, 6, 6, 7,
                             7};
             player.Move(moves);
-            Assert.AreEqual(State.Dead, player.State);
+            Assert.AreEqual(State.Dead, player.state);
             Assert.AreNotEqual(floor.StairPosition, player.Position);
 
             floor = new Floor(data);
@@ -108,7 +108,7 @@ namespace Tests
                                 6, 6, 6, 7 };
             player.Move(moves);
             floor.PrintFloor();
-            Assert.AreEqual(State.Alive, player.State);
+            Assert.AreEqual(State.Alive, player.state);
             Assert.AreEqual(floor.StairPosition, player.Position);
         }
     }

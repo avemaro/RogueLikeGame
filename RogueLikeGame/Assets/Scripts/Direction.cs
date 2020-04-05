@@ -64,5 +64,15 @@ public static class DirectionExtend {
             default: return new Direction[0];
         }
     }
+
+    public static Direction TurnLeft(this Direction direction) {
+        var forwards = direction.Forwards();
+        return forwards[0];
+    }
+
+    public static Direction TurnRight(this Direction direction) {
+        var forwards = direction.Forwards();
+        return forwards[2];
+    }
 }
 

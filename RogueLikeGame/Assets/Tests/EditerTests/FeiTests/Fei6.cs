@@ -65,7 +65,7 @@ namespace Tests
             var player = floor.Player;
 
             player.Move(3, 2, 2, 2, 2);
-            Assert.AreEqual(State.Dead, player.State);
+            Assert.AreEqual(State.Dead, player.state);
         }
     }
 }

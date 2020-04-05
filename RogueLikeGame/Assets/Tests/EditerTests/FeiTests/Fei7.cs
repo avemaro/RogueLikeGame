@@ -17,12 +17,12 @@ namespace Tests
             data = new string[] {
                 "◆◆◆◆◆◆◆◆◆",
                 "◆Ｇ　　　　　Ｇ◆",
-                "◆　武ＧマＧギ　◆",
-                "◆Ｇ武　マ　ギＧ◆",
-                "◆　武　マ　ギ　◆",
+                "◆　武Ｇ武Ｇ武　◆",
+                "◆Ｇ武　武　武Ｇ◆",
+                "◆　武　武　武　◆",
                 "◆　Ｇ　　　Ｇ　◆",
                 "◆　◇◇◇◇◇階◆",
-                "◆Ｇ　試巻　　　◆",
+                "◆Ｇ　試眠　　　◆",
                 "◆◆◆◆◆◆◆◆◆"
             };
             floor = new Floor(data);
@@ -37,6 +37,7 @@ namespace Tests
         [Test]
         public void Test_Fei7_Fail() {
             player.Move(2, 2, 2, 1);
+            floor.PrintFloor();
             Assert.AreNotEqual(floor.StairPosition, player.Position);
         }
 
@@ -45,6 +46,7 @@ namespace Tests
             player.Move(2);
             player.Use(0);
             player.Move(2, 2, 1);
+            floor.PrintFloor();
             Assert.AreEqual(floor.StairPosition, player.Position);
         }
 
@@ -52,8 +54,13 @@ namespace Tests
         public void Test_EnemiesMove() {
             var enemy = floor.GetEnemy(6, 4);
             player.Move(2);
+            floor.PrintFloor();
             Assert.AreEqual((5, 5), enemy.Position);
-
+            player.Move(2);
+            floor.PrintFloor();
+            player.Move(2);
+            floor.PrintFloor();
+            Assert.AreEqual((6, 5), enemy.Position);
         }
     }
 }
