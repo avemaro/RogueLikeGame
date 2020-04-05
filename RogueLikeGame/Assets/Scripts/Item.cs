@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
     static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹',
-        '眼', 'Ｇ', '眠' };
+        '眼', 'Ｇ', '眠', '縛' };
     public new static Item Create(Floor floor, Cell cell, char data) {
         if (!IDs.Contains(data)) return null;
         return new Item(floor, cell, data);
@@ -59,6 +59,8 @@ public class Item : Stuff, IEquatable<Item> {
         }
         if (ID == '吹')
             enemy.Fly(player.direction);
+        if (ID == '縛')
+            enemy.state = State.Sleep;
 
         return true;
     }
