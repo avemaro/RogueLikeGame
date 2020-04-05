@@ -13,9 +13,6 @@ public abstract class Creature: Stuff {
 
     public void IsAttacked() {
         state = State.Dead;
-
-        if (state == State.Dead)
-            floor.Remove(this);
     }
 
     public virtual bool Move(Direction direction) {

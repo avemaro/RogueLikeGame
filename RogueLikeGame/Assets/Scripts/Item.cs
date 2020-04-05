@@ -29,6 +29,11 @@ public class Item : Stuff, IEquatable<Item> {
                 enemy.state = State.Sleep;
         }
 
+        if (ID == '真') {
+            for (var i = 0; i < floor.Enemies.Count; i++)
+                floor.Enemies[i].IsAttacked();
+        }
+
         if (ID == '眼') {
             foreach (var trap in floor.Traps)
                 trap.isVisible = true;

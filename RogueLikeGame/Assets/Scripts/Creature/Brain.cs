@@ -20,13 +20,6 @@ public class Brain {
         var difference = floor.Player.Position - enemy.Position;
         enemy.direction = difference.Direction;
 
-        //foreach (var direction in DirectionExtend.AllCases()) {
-        //    var cell = enemy.Position.Next(direction);
-        //    if (floor.Player.Position != cell) continue;
-        //    enemy.direction = direction;
-        //    break;
-        //}
-
         if (enemy.Attack()) return;
 
         if (enemy.ID == 'マ' || enemy.ID == 'ギ') return;

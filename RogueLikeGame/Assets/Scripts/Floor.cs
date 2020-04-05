@@ -40,6 +40,8 @@ public class Floor {
     }
 
     public void Work() {
+        Enemies.RemoveAll(enemy => enemy.state == State.Dead);
+
         foreach (var enemy in Enemies)
             enemy.Work();
         foreach (var trap in Traps)

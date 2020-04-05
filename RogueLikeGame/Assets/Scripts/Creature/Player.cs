@@ -23,6 +23,7 @@ public class Player: Creature {
     }
 
     public void Use(int index) {
+        if (index > Items.Count - 1) return;
         var item = Items[index];
         item.Use(this);
         floor.Work();
