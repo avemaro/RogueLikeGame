@@ -8,7 +8,7 @@ public abstract class Creature: Stuff {
 
     public virtual bool Attack() {
         var to = Position.Next(direction);
-        return floor.IsAttacked(to);
+        return floor.IsAttacked(this, to);
     }
 
     public void IsAttacked() {

@@ -46,6 +46,8 @@ public class Floor {
             enemy.Work();
         foreach (var trap in Traps)
             trap.Work();
+
+        Enemies.RemoveAll(enemy => enemy.state == State.Dead);
     }
 
     #region terrain
@@ -55,26 +57,37 @@ public class Floor {
         return null;
     }
 
-    internal bool IsAttacked(Cell to) {
-        var nextCell = GetTerrainCell(to);
-        if (nextCell.type == TerrainType.breakableWall) {
-            nextCell.type = TerrainType.land;
+    internal bool IsAttacked(Creature attacker, Cell to) {
+        var hasAttacked = false;
+        if (attacker == Player) {
+            var nextCell = GetTerrainCell(to);
+            if (nextCell.type == TerrainType.breakableWall) {
+                nextCell.type = TerrainType.land;
 
-            var hasAttacked = false;
-            foreach (var direction in DirectionExtend.AllCases()) {
-                nextCell = GetTerrainCell(to).Next(direction);
-                if (nextCell.type != TerrainType.breakableWall) continue;
-                IsAttacked(nextCell);
-                hasAttacked = true;
+                foreach (var direction in DirectionExtend.AllCases()) {
+                    nextCell = GetTerrainCell(to).Next(direction);
+                    if (nextCell.type != TerrainType.breakableWall) continue;
+                    IsAttacked(attacker, nextCell);
+                    hasAttacked = true;
+                }
+                if (hasAttacked) return true;
             }
-            if (hasAttacked) return true;
+
+            foreach (var enemy in Enemies) {
+                if (enemy.Position == to) {
+                    enemy.IsAttacked();
+                    hasAttacked = true;
+                }
+            }
+            return hasAttacked;
         }
 
         if (Player.Position == to) {
             Player.IsAttacked();
-            return true;
+            hasAttacked = true;
         }
-        return false;
+
+        return hasAttacked;
     }
 
     public TerrainType GetTerrain(int x, int y) {
@@ -148,6 +161,9 @@ public class Floor {
                 if (stuff != null) {
                     data = stuff.ID;
                     if (!stuff.isVisible) data = '　';
+                    if (stuff is Enemy) {
+                        if (((Enemy)stuff).state == State.Dead) data = '　';
+                    }
                 }
                 if (Player.Position == (x, y)) data = '試';
                 str += data;

@@ -32,7 +32,7 @@ public class Bowboy : Enemy {
         var nextCell = Position;
         while (true) {
             nextCell = nextCell.Next(direction);
-            if (floor.IsAttacked(nextCell)) return true;
+            if (floor.IsAttacked(this, nextCell)) return true;
             if (floor.GetTerrain(nextCell) == TerrainType.wall) return false;
         }
     }

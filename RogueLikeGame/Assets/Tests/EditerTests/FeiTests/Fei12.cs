@@ -16,15 +16,15 @@ namespace Tests
         public void SetUp() {
             data = new string[] {
                 "◆◆◆◆◆◆◆◆◆◆◆　　　　　　　",
-                "◆　　　　武　　　　◆　　　　　　　",
-                "◆　武　　　　　武　◆　　　　　　　",
+                "◆　武　　武　　　　◆　　　　　　　",
+                "◆　　　　　　　　　◆　　　　　　　",
                 "◆　　　　　　　　　◆　　◆◆◆◆◆",
                 "◆　　　　眼　　　　◆◆◆◆　　　◆",
                 "◆武　　薬爆薬　　武　　　　　　階◆",
                 "◆　　　試眼　　　　◆◆◆◆　　　◆",
                 "◆　　 　　　 　　◆　　◆◆◆◆◆",
-                "◆　武　　　　　武　◆　　　　　　　",
-                "◆　　　　武　　　　◆　　　　　　　",
+                "◆　　　　　　　　　◆　　　　　　　",
+                "◆　武　　武　　武　◆　　　　　　　",
                 "◆◆◆◆◆◆◆◆◆◆◆　　　　　　　"
             };
             floor = new Floor(data);
@@ -35,15 +35,15 @@ namespace Tests
         public void Test_floorHasPrinted() {
             var expected = new string[] {
                 "◆◆◆◆◆◆◆◆◆◆◆　　　　　　　",
-                "◆　　　　武　　　　◆　　　　　　　",
-                "◆　武　　　　　武　◆　　　　　　　",
+                "◆　武　　武　　　　◆　　　　　　　",
+                "◆　　　　　　　　　◆　　　　　　　",
                 "◆　　　　　　　　　◆　　◆◆◆◆◆",
                 "◆　　　　眼　　　　◆◆◆◆　　　◆",
                 "◆武　　薬　薬　　武　　　　　　階◆",
                 "◆　　　試眼　　　　◆◆◆◆　　　◆",
                 "◆　　　　　　　　　◆　　◆◆◆◆◆",
-                "◆　武　　　　　武　◆　　　　　　　",
-                "◆　　　　武　　　　◆　　　　　　　",
+                "◆　　　　　　　　　◆　　　　　　　",
+                "◆　武　　武　　武　◆　　　　　　　",
                 "◆◆◆◆◆◆◆◆◆◆◆　　　　　　　"
             };
             Assert.AreEqual(expected, floor.PrintFloor());
@@ -51,8 +51,15 @@ namespace Tests
 
         [Test]
         public void Test_Pass() {
-            player.Move(0, 1, 4, 2, 2,
-                        2, 2, 2, 2, 2,
+            player.Move(0, 1);
+            floor.PrintFloor();
+            player.Move(4);
+            floor.PrintFloor();
+            Assert.True(player.Move(2));
+            floor.PrintFloor();
+            Assert.True(player.Move(2));
+            floor.PrintFloor();
+            player.Move(2, 2, 2, 2, 2,
                         2, 2, 2, 2);
             floor.PrintFloor();
             Assert.AreEqual(State.Alive, player.state);

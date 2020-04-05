@@ -25,6 +25,11 @@ public class Trap: Stuff {
             case '跳':
                 floor.Player.Jump();
                 return;
+            case '爆':
+                foreach (var cell in Position.Around) {
+                    floor.IsAttacked(floor.Player, cell);
+                }
+                return;
         }
     }
 }

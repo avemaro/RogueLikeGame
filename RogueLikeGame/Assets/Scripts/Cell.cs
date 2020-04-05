@@ -15,6 +15,15 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
         this.y = y;
     }
 
+    public List<Cell> Around {
+        get {
+            var cells = new List<Cell>();
+            foreach (var direction in DirectionExtend.AllCases())
+                cells.Add(Next(direction));
+            return cells;
+        }
+    }
+
     public virtual Cell Next(Direction direction) {
         return new Cell(x + direction.GetValue().x, y + direction.GetValue().y);
     }
