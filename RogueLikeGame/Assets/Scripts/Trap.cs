@@ -23,7 +23,7 @@ public class Trap: Stuff {
         switch (ID) {
             case '罠': floor.Player.IsAttacked(); return;
             case '跳':
-                floor.Player.Move(Direction.right);
+                floor.Player.Jump();
                 return;
         }
     }

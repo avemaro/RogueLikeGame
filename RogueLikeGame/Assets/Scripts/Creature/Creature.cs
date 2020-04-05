@@ -43,15 +43,20 @@ public abstract class Creature: Stuff {
 
     bool IsRegalMove() {
         var to = Position.Next(direction);
-        if (floor.GetTerrain(to) != TerrainType.land) return false;
-        if (floor.GetEnemy(to) != null) return false;
-        if (floor.Player.Position == to) return false;
+        if (!IsAbleToGo(to)) return false;
 
         if (!direction.IsDiagonal()) return true;
 
         var forwards = Position.Next(direction.Forwards());
         if (floor.GetTerrain(forwards).Contains(TerrainType.wall)) return false;
 
+        return true;
+    }
+
+    bool IsAbleToGo(Cell to) {
+        if (floor.GetTerrain(to) != TerrainType.land) return false;
+        if (floor.GetEnemy(to) != null) return false;
+        if (floor.Player.Position == to) return false;
         return true;
     }
 
@@ -63,5 +68,16 @@ public abstract class Creature: Stuff {
                 nextCell.type != TerrainType.water) break;
             Position = nextCell;
         }
+    }
+
+    public void Jump() {
+        Cell to = Position;
+        for (var i = 0; i < 100; i++) {
+            var x = Random.Range(0, floor.floorSize.x);
+            var y = Random.Range(0, floor.floorSize.y);
+            to = new Cell(x, y);
+            if (IsAbleToGo(to)) break;
+        }
+        Position = to;
     }
 }

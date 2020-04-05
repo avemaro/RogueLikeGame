@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Floor {
-    (int x, int y) floorSize;
+    public (int x, int y) floorSize;
     readonly List<TerrainCell> terrains = new List<TerrainCell>();
     public Cell StairPosition { get; private set; }
     public Player Player { get; private set; }
