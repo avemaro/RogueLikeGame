@@ -41,18 +41,19 @@ namespace Tests
             Assert.AreEqual(State.Dead, player.state);
         }
 
-        [Test]
-        public void Test_Fail2() {
-            player.Move(2);
-            player.Use(0);
-            player.Move(2, 2, 2, 2, 2,
-                        2, 2, 2, 2, 2,
-                        2);
-            floor.PrintFloor();
-            player.Move(2, 2);
-            floor.PrintFloor();
-            Assert.AreEqual(State.Dead, player.state);
-        }
+        //[Test]
+        //public void Test_Fail2() {
+        //    player.Move(2);
+        //    player.Use(0);
+        //    player.Move(2, 2, 2, 2, 2,
+        //                2, 2, 2, 2, 2,
+        //                2);
+        //    floor.PrintFloor();
+        //    player.Move(2, 2);
+        //    floor.PrintFloor();
+        //    Assert.AreEqual(State.Dead, player.state);
+        //}
+
         [Test]
         public void Test_Pass() {
             player.Move(2);
