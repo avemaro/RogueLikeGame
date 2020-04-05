@@ -7,10 +7,6 @@ public abstract class Creature: Stuff, IAttacker {
     public State state;
 
     public abstract bool Attack();
-    //public virtual bool Attack() {
-    //    var to = Position.Next(direction);
-    //    return floor.IsAttacked(this, to);
-    //}
 
     public virtual bool IsAttacked(IAttacker attacker) {
         state = State.Dead;

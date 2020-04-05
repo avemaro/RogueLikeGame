@@ -29,7 +29,7 @@ public class TerrainCell : Cell {
         return floor.GetTerrainCell(next);
     }
 
-    public bool IsAttacked(Creature attacker) {
+    public bool IsAttacked(IAttacker attacker) {
         var hasAttacked = false;
         if (type == TerrainType.breakableWall) {
             type = TerrainType.land;
@@ -41,11 +41,12 @@ public class TerrainCell : Cell {
         }
         if (hasAttacked) return true;
 
-        if (floor.Player.weapon != null)
+        if (attacker.ID == 'つ') {
             if (type == TerrainType.wall) {
                 type = TerrainType.land;
                 hasAttacked = true;
             }
+        }
         return hasAttacked;
     }
 }

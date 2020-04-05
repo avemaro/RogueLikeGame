@@ -60,7 +60,7 @@ public class Item : Stuff, IEquatable<Item>, IAttacker {
         return base.Equals(other);
     }
 
-    public bool Attack() {
+    public virtual bool Attack() {
         throw new NotImplementedException();
     }
 

@@ -7,6 +7,7 @@ public class Player: Creature {
 
     public Player(Floor floor) {
         this.floor = floor;
+        weapon = Equipment.Create(floor, Position, '拳');
     }
 
     public override bool Move(Direction direction) {
@@ -17,13 +18,14 @@ public class Player: Creature {
     }
 
     public override bool Attack() {
-        var to = Position.Next(direction);
+        return weapon.Attack();
+        //var to = Position.Next(direction);
 
-        var enemy = floor.GetEnemy(to);
-        if (enemy != null) return enemy.IsAttacked(this);
+        //var enemy = floor.GetEnemy(to);
+        //if (enemy != null) return enemy.IsAttacked(this);
 
-        var cell = floor.GetTerrainCell(to);
-        return cell.IsAttacked(this);
+        //var cell = floor.GetTerrainCell(to);
+        //return cell.IsAttacked(this);
     }
 
     bool PickUp() {

@@ -19,7 +19,6 @@ public class Wand : Item {
 
     public override bool Use(Player player) {
         durability--;
-        Debug.Log("Wand");
         var nextCell = floor.GetTerrainCell(player.Position);
 
         while (true) {
