@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item>, IAttacker {
     static readonly List<char> IDs = new List<char>()
-    { '草', '眼', 'Ｇ', '薬'};
+    { '草', '眼', 'Ｇ', '薬', 'ト'};
     public new static Item Create(Floor floor, Cell cell, char data) {
         var equipment = Equipment.Create(floor, cell, data);
         if (equipment != null) return equipment;
