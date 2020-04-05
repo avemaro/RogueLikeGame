@@ -14,7 +14,7 @@
       <File FileName="Assets/Scripts/Creature/Player.cs" Line="38" Column="1" NotebookId="1" />
       <File FileName="Assets/Scripts/Cell.cs" NotebookId="1" />
       <File FileName="Assets/Tests/EditerTests/FeiTests/Fei13.cs" Line="35" Column="10" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei11.cs" Line="11" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei11.cs" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
