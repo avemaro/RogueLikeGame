@@ -57,47 +57,6 @@ public class Floor {
         return null;
     }
 
-    internal bool IsAttacked(Creature attacker, Cell to) {
-        var hasAttacked = false;
-        if (attacker == Player) {
-            var nextCell = GetTerrainCell(to);
-            if (nextCell.type == TerrainType.breakableWall) {
-                nextCell.type = TerrainType.land;
-
-                foreach (var direction in DirectionExtend.AllCases()) {
-                    nextCell = GetTerrainCell(to).Next(direction);
-                    if (nextCell.type != TerrainType.breakableWall) continue;
-                    IsAttacked(attacker, nextCell);
-                    hasAttacked = true;
-                }
-                if (hasAttacked) return true;
-            }
-
-            foreach (var enemy in Enemies) {
-                if (enemy.Position == to) {
-                    enemy.IsAttacked();
-                    hasAttacked = true;
-                }
-            }
-
-            if (Player.weapon != null) {
-                if (nextCell.type == TerrainType.wall) {
-                    nextCell.type = TerrainType.land;
-                }
-            }
-
-
-            return hasAttacked;
-        }
-
-        if (Player.Position == to) {
-            Player.IsAttacked();
-            hasAttacked = true;
-        }
-
-        return hasAttacked;
-    }
-
     public TerrainType GetTerrain(int x, int y) {
         return GetTerrain(new Cell(x, y));
     }
@@ -115,6 +74,7 @@ public class Floor {
     }
     #endregion
 
+    #region getter
     public Stuff GetStuff(int x, int y) {
         var item = GetItem(x, y);
         if (item != null) return item;
@@ -146,7 +106,7 @@ public class Floor {
             if (trap.Position == (x, y)) return trap;
         return null;
     }
-
+    #endregion
 
     public void Remove(Item item) {
         items.Remove(item);

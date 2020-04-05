@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap: Stuff {
+public class Trap: Stuff, IAttacker {
     static readonly List<char> IDs = new List<char>() { '罠', '跳', '爆' };
     public new static Trap Create(Floor floor, Cell cell, char data) {
         if (!IDs.Contains(data)) return null;
@@ -21,15 +21,24 @@ public class Trap: Stuff {
         isVisible = true;
 
         switch (ID) {
-            case '罠': floor.Player.IsAttacked(); return;
+            case '罠': floor.Player.IsAttacked(this); return;
             case '跳':
                 floor.Player.Jump();
                 return;
             case '爆':
                 foreach (var cell in Position.Around) {
-                    floor.IsAttacked(floor.Player, cell);
+                    var enemy = floor.GetEnemy(cell);
+                    if (enemy != null) enemy.IsAttacked(this);
                 }
                 return;
         }
+    }
+
+    public bool Attack() {
+        throw new System.NotImplementedException();
+    }
+
+    public bool IsAttacked(IAttacker attacker) {
+        throw new System.NotImplementedException();
     }
 }

@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Creature: Stuff {
+public abstract class Creature: Stuff, IAttacker {
     public Direction direction;
     public State state;
 
-    public virtual bool Attack() {
-        var to = Position.Next(direction);
-        return floor.IsAttacked(this, to);
-    }
+    public abstract bool Attack();
+    //public virtual bool Attack() {
+    //    var to = Position.Next(direction);
+    //    return floor.IsAttacked(this, to);
+    //}
 
-    public void IsAttacked() {
+    public virtual bool IsAttacked(IAttacker attacker) {
         state = State.Dead;
+        return true;
     }
 
     public virtual bool Move(Direction direction) {

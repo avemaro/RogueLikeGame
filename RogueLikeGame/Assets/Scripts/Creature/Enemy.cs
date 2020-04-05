@@ -22,6 +22,17 @@ public class Enemy : Creature {
     public void Work() {
         brain.Work();
     }
+
+    public override bool Attack() {
+        var to = Position.Next(direction);
+        if (to == floor.Player.Position) return floor.Player.IsAttacked(this);
+        return false;
+    }
+
+    public override bool IsAttacked(IAttacker attacker) {
+        if (attacker is Enemy) return false;
+        return base.IsAttacked(attacker);
+    }
 }
 
 public class Bowboy : Enemy {
@@ -32,7 +43,7 @@ public class Bowboy : Enemy {
         var nextCell = Position;
         while (true) {
             nextCell = nextCell.Next(direction);
-            if (floor.IsAttacked(this, nextCell)) return true;
+            if (nextCell == floor.Player.Position) return floor.Player.IsAttacked(this);
             if (floor.GetTerrain(nextCell) == TerrainType.wall) return false;
         }
     }

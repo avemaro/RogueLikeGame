@@ -16,6 +16,16 @@ public class Player: Creature {
         return true;
     }
 
+    public override bool Attack() {
+        var to = Position.Next(direction);
+
+        var enemy = floor.GetEnemy(to);
+        if (enemy != null) return enemy.IsAttacked(this);
+
+        var cell = floor.GetTerrainCell(to);
+        return cell.IsAttacked(this);
+    }
+
     bool PickUp() {
         var item = floor.GetItem(Position.x, Position.y);
         floor.Remove(item);

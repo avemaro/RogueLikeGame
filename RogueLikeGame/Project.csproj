@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Attackable.cs" />
     <Compile Include="Assets\Scripts\Cell.cs" />
     <Compile Include="Assets\Scripts\Creature\Brain.cs" />
     <Compile Include="Assets\Scripts\Creature\Creature.cs" />
@@ -73,7 +72,10 @@
     <Compile Include="Assets\Scripts\Direction.cs" />
     <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\Floor.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\IAttacker.cs" />
+    <Compile Include="Assets\Scripts\Item\Item.cs" />
+    <Compile Include="Assets\Scripts\Item\Scroll.cs" />
+    <Compile Include="Assets\Scripts\Item\Wand.cs" />
     <Compile Include="Assets\Scripts\Stuff.cs" />
     <Compile Include="Assets\Scripts\TerrainCell.cs" />
     <Compile Include="Assets\Scripts\TerrainType.cs" />

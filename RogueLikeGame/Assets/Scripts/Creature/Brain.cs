@@ -14,20 +14,15 @@ public class Brain {
 
     public void Work() {
         if (enemy.state != State.Alive) return;
-
         destination = floor.Player.Position;
-
         var difference = floor.Player.Position - enemy.Position;
         enemy.direction = difference.Direction;
-
         if (enemy.Attack()) return;
-
         if (enemy.ID == 'マ' || enemy.ID == 'ギ') return;
-
-        FindWay();
+        DecideMove();
     }
 
-    void FindWay() {
+    void DecideMove() {
         //Debug.Log("FindWay");
         var difference = destination - enemy.Position;
         var direction = difference.Direction;

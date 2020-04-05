@@ -16,8 +16,36 @@ public class TerrainCell : Cell {
         this.type = type;
     }
 
+    new public List<TerrainCell> Around {
+        get {
+            var cells = new List<TerrainCell>();
+            foreach (var direction in DirectionExtend.AllCases())
+                cells.Add(Next(direction));
+            return cells;
+        }
+    }
     new public TerrainCell Next(Direction direction) {
         var next = base.Next(direction);
         return floor.GetTerrainCell(next);
+    }
+
+    public bool IsAttacked(Creature attacker) {
+        var hasAttacked = false;
+        if (type == TerrainType.breakableWall) {
+            type = TerrainType.land;
+            hasAttacked = true;
+            foreach (var cell in Around) {
+                if (cell.type != TerrainType.breakableWall) continue;
+                cell.IsAttacked(attacker);
+            }
+        }
+        if (hasAttacked) return true;
+
+        if (floor.Player.weapon != null)
+            if (type == TerrainType.wall) {
+                type = TerrainType.land;
+                hasAttacked = true;
+            }
+        return hasAttacked;
     }
 }
