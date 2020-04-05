@@ -31,6 +31,23 @@ namespace Tests
         public void Test_floorHasPrinted() {
             Assert.AreEqual(data, floor.PrintFloor());
         }
+
+        [Test]
+        public void Test_Fail() {
+            player.Move(Direction.right);
+            Assert.AreEqual(State.Dead, player.state);
+        }
+
+        [Test]
+        public void Test_Pass() {
+            player.Move(4, 0, 4);
+            floor.PrintFloor();
+            player.Move(6);
+            floor.PrintFloor();
+            player.Move(3, 7);
+            floor.PrintFloor();
+            Assert.AreEqual(State.Alive, player.state);
+        }
     }
 }
 

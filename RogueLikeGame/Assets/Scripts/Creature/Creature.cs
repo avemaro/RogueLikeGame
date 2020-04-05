@@ -6,7 +6,7 @@ public abstract class Creature: Stuff {
     public Direction direction;
     public State state;
 
-    public bool Attack() {
+    public virtual bool Attack() {
         var to = Position.Next(direction);
         return floor.IsAttacked(to);
     }

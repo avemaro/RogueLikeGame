@@ -17,12 +17,15 @@ public class Brain {
 
         destination = floor.Player.Position;
 
-        foreach (var direction in DirectionExtend.AllCases()) {
-            var cell = enemy.Position.Next(direction);
-            if (floor.Player.Position != cell) continue;
-            enemy.direction = direction;
-            break;
-        }
+        var difference = floor.Player.Position - enemy.Position;
+        enemy.direction = difference.Direction;
+
+        //foreach (var direction in DirectionExtend.AllCases()) {
+        //    var cell = enemy.Position.Next(direction);
+        //    if (floor.Player.Position != cell) continue;
+        //    enemy.direction = direction;
+        //    break;
+        //}
 
         if (enemy.Attack()) return;
 
@@ -32,8 +35,10 @@ public class Brain {
     }
 
     void FindWay() {
+        //Debug.Log("FindWay");
         var difference = destination - enemy.Position;
         var direction = difference.Direction;
+        //Debug.Log(direction);
         if (enemy.Move(direction)) return;
 
         if (!direction.IsDiagonal()) {
@@ -41,15 +46,17 @@ public class Brain {
             if (enemy.Move(enemy.direction.TurnRight())) return;
         }
 
+        //Debug.Log("x: " + difference.x + ", y: " + difference.y);
+
         if (Mathf.Abs(difference.x) > Mathf.Abs(difference.y)) {
             if (difference.x > 0 && enemy.Move(Direction.right)) return;
-            if (enemy.Move(Direction.left)) return;
             if (difference.y > 0 && enemy.Move(Direction.down)) return;
+            if (enemy.Move(Direction.left)) return;
             if (enemy.Move(Direction.up)) return;
         } else {
             if (difference.y > 0 && enemy.Move(Direction.down)) return;
-            if (enemy.Move(Direction.up)) return;
             if (difference.x > 0 && enemy.Move(Direction.right)) return;
+            if (enemy.Move(Direction.up)) return;
             if (enemy.Move(Direction.left)) return;
         }
 
