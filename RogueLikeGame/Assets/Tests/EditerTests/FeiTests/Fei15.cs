@@ -13,8 +13,7 @@ namespace Tests
         Player player;
 
         [SetUp]
-        public void SetUp()
-        {
+        public void SetUp() {
             data = new string[] {
                 "◆◆◆◆◆◆◆◆◆",
                 "◆　　　　　　　◆",
@@ -30,9 +29,22 @@ namespace Tests
         }
 
         [Test]
-        public void Test_floorHasPrinted()
-        {
+        public void Test_floorHasPrinted() {
             Assert.AreEqual(data, floor.PrintFloor());
+        }
+
+        [Test]
+        public void Test_Pass() {
+            player.Move(6, 6, 6, 6, 4);
+            player.Use(0);
+            player.Move(0);
+            player.Throw(0);
+            floor.PrintFloor();
+            player.Move(2, 6, 4, 2, 3);
+            floor.PrintFloor();
+            player.Use(0);
+            player.Move(4, 5);
+            Assert.AreEqual(floor.StairPosition, player.Position);
         }
     }
 }

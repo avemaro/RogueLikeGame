@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}|">
-  <MonoDevelop.Ide.ItemProperties.EditerTests PreferredExecutionTarget="db235db1-4c3c-47f5-996e-2abdd823e907" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Item/Item.cs">
+  <MonoDevelop.Ide.ItemProperties.EditerTests PreferredExecutionTarget="3215624e-a8d2-4a94-b660-9b428e01243c" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tests/EditerTests/FeiTests/Fei15.cs">
     <Files>
       <File FileName="Assets/Scripts/Floor.cs" Line="47" Column="36" />
       <File FileName="Assets/Scripts/TerrainCell.cs" />
       <File FileName="Assets/Scripts/Equipment.cs" />
       <File FileName="Assets/Scripts/Creature/Brain.cs" />
       <File FileName="Assets/Scripts/IAttacker.cs" />
-      <File FileName="Assets/Scripts/Trap.cs" Line="7" Column="57" />
-      <File FileName="Assets/Scripts/Creature/Creature.cs" Line="16" Column="52" />
-      <File FileName="Assets/Scripts/Direction.cs" Line="92" Column="1" />
-      <File FileName="Assets/Scripts/Item/Item.cs" Line="8" Column="29" />
+      <File FileName="Assets/Scripts/Trap.cs" />
+      <File FileName="Assets/Scripts/Creature/Creature.cs" />
+      <File FileName="Assets/Scripts/Direction.cs" />
+      <File FileName="Assets/Scripts/Item/Item.cs" Line="13" Column="11" />
       <File FileName="Assets/Tests/EditerTests/FeiTests/Fei15.cs" Line="24" Column="24" NotebookId="1" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei14.cs" Line="11" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei14.cs" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
