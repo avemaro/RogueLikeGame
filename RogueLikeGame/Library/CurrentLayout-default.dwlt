@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 786
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 736
-  m_MinSize: {x: 504, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 503, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 19
+  controlID: 79
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1022
     height: 736
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 20
+  controlID: 484
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 79
+  controlID: 20
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -240,14 +240,14 @@ MonoBehaviour:
     y: 463
     width: 1022
     height: 273
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 418
     height: 736
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 19}
@@ -421,9 +421,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ee2e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f41affffc01bffffc41cffff881dffff4c1effff221fffffe01fffff0021ffffe221ffff5422ffff1423ffffd823ffff9c24ffffb825ffff2226ffffe626ffffb427ffff322affff982bffff5c2cffff202dffffea2dffffa42effffb82fffff7c30ffff4031ffff0c32ffffcc32ffffe433ffff4834fffff835ffff5e36ffff1c37ffff2638ffffe238fffff439ffff043bffff663bffffc63bffff243dffff263effffcc3fffff2e40ffffe640ffff3e41ffffee41ffff0243ffffe043ffff9044ffff4245ffff4446fffff446ffffa847ffff7a48ffffba49ffff164affffb04bffffb84cffff5e4dffffb44dffff1a4effff7a4effff2c4fffff8c4fffffe84fffff3c50ffff3851ffffea51ffff9052ffff4053fffff253ffff4a54ffff0a55ffff0656ffff7056ffffdc57ffff3458ffffe058ffff3e59ffff3a5affffea5affffea5bfffff65cffff985dffffec5dffff3c5effff325fffffdc5fffff9060ffff3461ffffea61ffff9662ffffec62ffff8e63ffff8c64ffffe264ffff8e65ffffec65ffff4266ffff0067fffffc67ffffce68ffffd069ffffca6affff1e6bffff706cffff226dffffca6dffff266effffd66effff8470ffffd670ffff8a71ffff3c72ffffe472ffff1274ffff0475ffffac76ffff9078ffff2e79ffffd479ffffd27affff2e7bffff267cffffd47cffff207dffff647effff1c80ffff6a80ffff0c81ffff0282ffff4483ffffe483ffffce85ffff6e86ffff0e87ffff5088fffff688ffff4089ffff108affff608affff588bfffff88bffffa88cffff008dffff9c8dffff3c8effff2c8fffffc88fffff7090ffffca90ffff7891ffff1892ffff1293ffffae94ffffee95ffff9496ffff6c98ffff6e99ffff329affffcc9affff829bffff409cffffe29cffffd69dffffec9effff349fffff20a2ffff08a3ffff4ea3ffff9aa3ffff20a4ffff62a4ffff06a5ffffa4a5ffff3ca6ffffd4a6ffff6ea7ffff10a8ffffa4a8ffffd2a8fffff8a8ffff3aa9ffffd4a9ffff6aaaffff0aabffffa4abffff4aacffff3aadffffceadffff6eaeffffe2b0ffffd6b1ffff18b2ffffb0b2ffff48b3ffffe0b3ffff7ab4ffff9eb7ffff7abaffffbabaffff9abcffff3ebdffffd8bdffff6ebeffff08bfffffa2bfffffecbfffff34c0ffffcec0ffff66c1ffff04c2ffff96c2ffff34c3ffff2cc4ffffc4c4ffff0cc6ffff5ac7ffff48c8ffffdec8ffffc0c9ffff60cafffff6caffff8ccbffffc8cbffff00cdffffa0cdffff9acfffff2ed0ffff76d0ffff60d1fffff6d1ffff8cd2ffff70d3ffff0ad4ffff9ed4ffff34d5ffff22d6ffff66d7ffff64d8fffff8d8ffff86d9fffffedafffff4dbffffc4ddffff54deffffe6deffffd0dfffffd0e0ffff60e1ffff02e2ffffb0e2ffff6ce3ffffa6e3fffffce3ffff14e4ffff26e5ffff0ae6ffff9ee6ffff50e7ffff6ee8fffff8e8ffffaae9ffff9cedffff2ceeffffbaeeffff46efffffdaefffff70f0fffff8f0ffff8cf1ffff66f2ffff00f3ffff42f3ffff2ef4ffff06f5ffff96f5ffff82f6ffff12f7ffff4ef7ffff86f7ffff16f8ffffa0f8ffffd6f8fffffcf9ffff26faffff62faffff48fbffff
+      m_ExpandedIDs: 9c46ffff4a47ffff3e48ffff3649ffff324affff2c4bffff284cffff264dffff284effff264fffff3650ffff4051ffff4452ffff0253ffff0254ffff0c55ffff6056ffff6457ffffe857ffffe258ffffe259ffff345bffff305cffff2e5dffff4c5effff9a5fffff9660ffff4061ffff3662ffffd263ffff7665ffffd066ffffcc67ffffc868ffff7c69ffff746affff1e6bffffce6bffff226dffff1e6effff206fffff1470ffff6071ffff5672ffff4e73ffff4c74ffff9075ffff8a76ffff8e77ffff7e78ffff247affff607affff1a7cffff327dffff287effff1a7fffff0c80ffff0a81ffff4882ffffe882ffff3884ffff3885ffff2a86ffff2a87ffffce87ffffbe88ffffb489ffff9c8affff8e8bffffd68cffffba8dffffa48effff8a8fffff3091ffff6692ffff4a93ffff3094ffff1495fffffa95ffffee96ffff3498ffff7299ffff509affff369bffff1a9cffff029dffffe69dffffc49effffa89fffff8ca0ffff70a1ffff58a2ffff42a3ffffc0a3ffff40a4ffffbea4ffff3ea5ffffcca5ffffa0a6ffff6aa7ffff94a7ffffbea7ffffe8a7ffff12a8ffff98a8ffff26a9ffffa0a9ffffcaa9ffff46aaffff70aaffff9aaaffff94abffff18acffff06adffffdeadffff5eaeffff42afffff96b0ffff16b1fffffab1ffffd0b2ffffa8b3ffff82b4ffff50b5ffff24b6fffff8b6ffffccb7ffffa6b8ffff7ab9ffff52baffff30bbffff04bcffffdabcffffb2bdffff88beffff5cbfffffc6c0ffff94c1ffffb8c1fffff6c2ffff68c3ffffdac3ffff4cc4ffffbec4ffff30c5ffffa2c5ffff14c6ffff86c6fffffec6ffff70c7ffff3ec9ffffb0c9ffff22caffff94caffff06cbffff78cbffffeacbffff5cccffffceccffff40cdffffb2cdffff24ceffff96ceffff08cfffff7acfffffeccfffff5ed0ffffd0d0ffff42d1ffffb4d1ffff26d2ffff98d2ffff0ad3ffff7cd3ffff02d6ffffe2d6fffffcd7ffffd8d8ffff9ed9ffffb8daffff84dbfffffcdbffffbcdcffffd4ddffff9edeffff16dfffff94dfffff6ae0ffffe2e0ffffb8e1ffff82e2ffffdee3ffff4ae4ffffbce4ffff60e6ffff2ce7fffff2e7ffffbce8ffff3ce9ffffa8e9ffff80eaffffeaeaffffb0ebffff7eecffff54edffff20eefffffceeffffc2efffff92f0ffffaaf1ffffd0f1ffff42f2fffffcf2ffff6cf3ffff3cf4fffffcf4ffff62f6ffff1cf7ffff90f7ffff4af8ffff52f9ffff16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -644,20 +644,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Tests/EditerTests
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Tests/EditerTests
   m_LastFoldersGridSize: 65
   m_LastProjectPath: /Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38340000
-    m_LastClickedID: 13368
-    m_ExpandedIDs: 0000000032340000383400003a3400003c34000000ca9a3b
+    m_SelectedIDs: 78360000
+    m_LastClickedID: 13944
+    m_ExpandedIDs: 000000006a3400006c340000743600007836000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,7 +685,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000032340000
+    m_ExpandedIDs: 000000006a3400006c340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -710,8 +710,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ee2e0000
-    m_LastClickedInstanceID: 12014
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000243300003c2f0000d4300000283d0000143f0000dc3000008c2f0000b2280000ba2800008e270000422e00002031000044320000243000007a660000a0270000da650000d0280000402b00008827000008640000ee270000ca5d0000eaa60000c8aa0000f43f0000344000009640000000000000
     m_RenameOverlay:
@@ -803,7 +803,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 12014
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
 --- !u!114 &20
 MonoBehaviour:
@@ -862,13 +862,13 @@ MonoBehaviour:
     height: 715
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 147
-    splitterInitialOffset: 325
+    ID: 144
+    splitterInitialOffset: 322
     currentActiveSplitter: -1
-    realSizes: 0001000085010000
+    realSizes: ff00000086010000
     relativeSizes:
-    - 0.39689922
-    - 0.6031008
+    - 0.39534885
+    - 0.60465115
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
     lastTotalSize: 645
@@ -933,9 +933,9 @@ MonoBehaviour:
       uniqueId: '[RogueLikeGame][suite]'
       name: RogueLikeGame
       fullName: RogueLikeGame
-      resultStatus: 2
-      duration: 0.7875815
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.1048284
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -945,13 +945,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1006
+    - id: 1026
       uniqueId: '[/Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame/Library/ScriptAssemblies/EditerTests.dll][suite]'
       name: EditerTests.dll
       fullName: /Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame/Library/ScriptAssemblies/EditerTests.dll
-      resultStatus: 2
-      duration: 0.7185435
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.0466297
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -961,28 +961,12 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[RogueLikeGame][suite]'
-    - id: 1004
+    - id: 1027
       uniqueId: EditerTests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 0.699229
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: '[/Users/yamasaki/Documents/GitHub/BoardGamesUnity/BoardGames/Library/ScriptAssemblies/EditerTests.dll][suite]'
-    - id: 1006
-      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei1][suite]
-      name: Fei1
-      fullName: Tests.Fei1
       resultStatus: 1
-      duration: 0.1548177
+      duration: 1.0170488
       messages: 
       output: 
       stacktrace: 
@@ -991,14 +975,30 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1010
+      parentId: 1026
+      parentUniqueId: '[/Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame/Library/ScriptAssemblies/EditerTests.dll][suite]'
+    - id: 1001
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei1][suite]
+      name: Fei1
+      fullName: Tests.Fei1
+      resultStatus: 1
+      duration: 0.0388863
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1027
       parentUniqueId: EditerTests.dll/[Tests][suite]
-    - id: 1007
+    - id: 1002
       uniqueId: EditerTests.dll/Tests/Fei1/[EditerTests][Tests.Fei1.DangeonDataHasLoaded]
       name: DangeonDataHasLoaded
       fullName: Tests.Fei1.DangeonDataHasLoaded
       resultStatus: 1
-      duration: 0.0745963
+      duration: 0.0176996
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u8A66\u3000\u3000\u25C6\u3000\u25C6\u3000\u25C7\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u25C7\u3000\u25C6\u3000\u25C7\u25C6\u25C7\u3000\u25C7\u25C6\n\u25C6\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u25C6\n\u25C6\u25C7\u3000\u25C7\u25C6\u25C7\u3000\u25C6\u3000\u25C7\u25C6\n\u25C6\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C7\u3000\u25C6\u3000\u25C6\u3000\u3000\u968E\u3000\u25C6\n\u25C6\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1008,14 +1008,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1001
       parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei1][suite]
-    - id: 1008
+    - id: 1003
       uniqueId: EditerTests.dll/Tests/Fei1/[EditerTests][Tests.Fei1.PlayerMoves]
       name: PlayerMoves
       fullName: Tests.Fei1.PlayerMoves
       resultStatus: 1
-      duration: 0.0183423
+      duration: 0.0145476
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u3000\u25C7\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u25C7\u3000\u25C6\u3000\u25C7\u25C6\u25C7\u3000\u25C7\u25C6\n\u25C6\u8A66\u25C7\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u25C6\n\u25C6\u25C7\u3000\u25C7\u25C6\u25C7\u3000\u25C6\u3000\u25C7\u25C6\n\u25C6\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C7\u3000\u25C6\u3000\u25C6\u3000\u3000\u968E\u3000\u25C6\n\u25C6\u3000\u25C7\u3000\u25C7\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1025,14 +1025,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1001
       parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei1][suite]
-    - id: 1009
+    - id: 1004
       uniqueId: EditerTests.dll/Tests/Fei1/[EditerTests][Tests.Fei1.Test_Fei1]
       name: Test_Fei1
       fullName: Tests.Fei1.Test_Fei1
       resultStatus: 1
-      duration: 0.0050221
+      duration: 0.0007227
       messages: 
       output: 
       stacktrace: 
@@ -1042,14 +1042,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1001
       parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei1][suite]
-    - id: 1010
-      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei2][suite]
-      name: Fei2
-      fullName: Tests.Fei2
+    - id: 1005
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei10][suite]
+      name: Fei10
+      fullName: Tests.Fei10
       resultStatus: 1
-      duration: 0.1861412
+      duration: 0.0774105
       messages: 
       output: 
       stacktrace: 
@@ -1058,14 +1058,198 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1014
+      parentId: 1037
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1007
+      uniqueId: EditerTests.dll/Tests/Fei10/[EditerTests][Tests.Fei10.Test_Fail]
+      name: Test_Fail
+      fullName: Tests.Fei10.Test_Fail
+      resultStatus: 1
+      duration: 0.0004726
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei10][suite]
+    - id: 1006
+      uniqueId: EditerTests.dll/Tests/Fei10/[EditerTests][Tests.Fei10.Test_floorHasPrinted]
+      name: Test_floorHasPrinted
+      fullName: Tests.Fei10.Test_floorHasPrinted
+      resultStatus: 1
+      duration: 0.0101697
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u8A66\u3000\u3000\u3000\u30AF\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei10][suite]
+    - id: 1008
+      uniqueId: EditerTests.dll/Tests/Fei10/[EditerTests][Tests.Fei10.Test_Pass]
+      name: Test_Pass
+      fullName: Tests.Fei10.Test_Pass
+      resultStatus: 1
+      duration: 0.0317404
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u8A66\u25C6\u30AF\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30AF\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u8A66\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30AF\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u8A66\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei10][suite]
+    - id: 1009
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei11][suite]
+      name: Fei11
+      fullName: Tests.Fei11
+      resultStatus: 1
+      duration: 0.0723894
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
       parentUniqueId: EditerTests.dll/[Tests][suite]
     - id: 1011
+      uniqueId: EditerTests.dll/Tests/Fei11/[EditerTests][Tests.Fei11.Test_Fail]
+      name: Test_Fail
+      fullName: Tests.Fei11.Test_Fail
+      resultStatus: 1
+      duration: 0.0144265
+      messages: 
+      output: "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u6B66\u8A66\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u6B66\u6B66\u6B66\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u6B66\u6B66\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u771F\u3000\u968E\u3000\u25C6\n\u25C6\u3000\u3000\u6B66\u6B66\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u6B66\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei11][suite]
+    - id: 1010
+      uniqueId: EditerTests.dll/Tests/Fei11/[EditerTests][Tests.Fei11.Test_floorHasPrinted]
+      name: Test_floorHasPrinted
+      fullName: Tests.Fei11.Test_floorHasPrinted
+      resultStatus: 1
+      duration: 0.0126679
+      messages: 
+      output: "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u6B66\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u6B66\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u6B66\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u6B66\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u8A66\u771F\u3000\u6B66\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u771F\u3000\u968E\u6B66\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u6B66\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u6B66\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u6B66\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u6B66\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei11][suite]
+    - id: 1012
+      uniqueId: EditerTests.dll/Tests/Fei11/[EditerTests][Tests.Fei11.Test_Pass]
+      name: Test_Pass
+      fullName: Tests.Fei11.Test_Pass
+      resultStatus: 1
+      duration: 0.0241406
+      messages: 
+      output: "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u8A66\u3000\u968E\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u8A66\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei11][suite]
+    - id: 1041
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei12][suite]
+      name: Fei12
+      fullName: Tests.Fei12
+      resultStatus: 1
+      duration: 0.1157299
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1042
+      uniqueId: EditerTests.dll/Tests/Fei12/[EditerTests][Tests.Fei12.Test_floorHasPrinted]
+      name: Test_floorHasPrinted
+      fullName: Tests.Fei12.Test_floorHasPrinted
+      resultStatus: 1
+      duration: 0.0207814
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u6B66\u3000\u3000\u6B66\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u6B66\u3000\u3000\u85AC\u3000\u85AC\u3000\u3000\u6B66\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u8A66\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u6B66\u3000\u3000\u6B66\u3000\u3000\u6B66\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei12][suite]
+    - id: 1043
+      uniqueId: EditerTests.dll/Tests/Fei12/[EditerTests][Tests.Fei12.Test_Pass]
+      name: Test_Pass
+      fullName: Tests.Fei12.Test_Pass
+      resultStatus: 1
+      duration: 0.0776038
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u6B66\u6B66\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u6B66\u3000\u8A66\u3000\u6B66\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u85AC\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u6B66\u6B66\u6B66\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u8A66\u85AC\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u7206\u8A66\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u7206\u3000\u8A66\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u7206\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u8A66\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei12][suite]
+    - id: 1005
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei2][suite]
+      name: Fei2
+      fullName: Tests.Fei2
+      resultStatus: 1
+      duration: 0.2156168
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1027
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1006
       uniqueId: EditerTests.dll/Tests/Fei2/[EditerTests][Tests.Fei2.Test_Fei2]
       name: Test_Fei2
       fullName: Tests.Fei2.Test_Fei2
       resultStatus: 1
-      duration: 0.1530702
+      duration: 0.150386
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u8A66\u2606\u2606\u2606\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u968E\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u968E\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u968E\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u8A66\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u2606\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u2606\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u2606\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u2606\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u2606\u2606\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u968E\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u8A66\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u3000\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u968E\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u3000\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u3000\u3000\u3000\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u8A66\u25C6\u25C6\u25C6\u25C6\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1075,14 +1259,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
+      parentId: 1005
       parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei2][suite]
     - id: 1007
       uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei3][suite]
       name: Fei3
       fullName: Tests.Fei3
       resultStatus: 1
-      duration: 0.101656
+      duration: 0.0981646
       messages: 
       output: 
       stacktrace: 
@@ -1091,14 +1275,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1011
+      parentId: 1027
       parentUniqueId: EditerTests.dll/[Tests][suite]
     - id: 1010
       uniqueId: EditerTests.dll/Tests/Fei3/[EditerTests][Tests.Fei3.PlayerHasAttacked]
       name: PlayerHasAttacked
       fullName: Tests.Fei3.PlayerHasAttacked
       resultStatus: 1
-      duration: 0.0153878
+      duration: 0.0201593
       messages: 
       output: "(5, 2)\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u968E\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30DE\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u8349\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n"
       stacktrace: 
@@ -1115,7 +1299,7 @@ MonoBehaviour:
       name: PlayerPickUpItem
       fullName: Tests.Fei3.PlayerPickUpItem
       resultStatus: 1
-      duration: 0.0243276
+      duration: 0.0228009
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u968E\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30DE\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u8349\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u968E\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30DE\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u8A66\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n"
       stacktrace: 
@@ -1132,7 +1316,7 @@ MonoBehaviour:
       name: PlayerUseItem
       fullName: Tests.Fei3.PlayerUseItem
       resultStatus: 1
-      duration: 0.0176052
+      duration: 0.0117886
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u968E\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30DE\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u8A66\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n"
       stacktrace: 
@@ -1149,7 +1333,7 @@ MonoBehaviour:
       name: Test_Fei3
       fullName: Tests.Fei3.Test_Fei3
       resultStatus: 1
-      duration: 0.0228375
+      duration: 0.0232656
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u968E\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u8A66\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u8A66\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n"
       stacktrace: 
@@ -1166,7 +1350,7 @@ MonoBehaviour:
       name: Fei4
       fullName: Tests.Fei4
       resultStatus: 1
-      duration: 0.0709923
+      duration: 0.0511782
       messages: 
       output: 
       stacktrace: 
@@ -1175,14 +1359,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1015
+      parentId: 1027
       parentUniqueId: EditerTests.dll/[Tests][suite]
     - id: 1013
       uniqueId: EditerTests.dll/Tests/Fei4/[EditerTests][Tests.Fei4.Test_Fei4]
       name: Test_Fei4
       fullName: Tests.Fei4.Test_Fei4
       resultStatus: 1
-      duration: 0.0303804
+      duration: 0.0339917
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u8A66\u6756\u25C7\u3000\u30DE\u3000\u25C7\u3000\u30DE\u3000\u25C7\u3000\u30DE\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u30DE\u25C7\u3000\u8A66\u3000\u25C7\u3000\u30DE\u3000\u25C7\u3000\u30DE\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u30DE\u25C7\u3000\u30DE\u3000\u25C7\u3000\u30DE\u3000\u25C7\u3000\u8A66\u968E\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1199,7 +1383,7 @@ MonoBehaviour:
       name: Fei5
       fullName: Tests.Fei5
       resultStatus: 1
-      duration: 0.0484705
+      duration: 0.0411493
       messages: 
       output: 
       stacktrace: 
@@ -1208,14 +1392,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1018
+      parentId: 1027
       parentUniqueId: EditerTests.dll/[Tests][suite]
     - id: 1016
       uniqueId: EditerTests.dll/Tests/Fei5/[EditerTests][Tests.Fei5.Test_Fei5]
       name: Test_Fei5
       fullName: Tests.Fei5.Test_Fei5
       resultStatus: 1
-      duration: 0.0180533
+      duration: 0.013263
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u5DFB\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C7\u25C7\u25C7\u25C7\u25C7\u25C6\u3000\u25C6\n\u25C6\u30AE\u3000\u3000\u3000\u3000\u8A66\u3000\u25C6\n\u25C6\u3000\u25C6\u25C7\u25C7\u25C7\u25C6\u3000\u25C6\n\u25C6\u3000\u25C6\u25C7\u25C7\u25C7\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u968E\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1232,7 +1416,7 @@ MonoBehaviour:
       name: Test_Fei5HasPrinted
       fullName: Tests.Fei5.Test_Fei5HasPrinted
       resultStatus: 1
-      duration: 0.0116754
+      duration: 0.0115725
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u5DFB\u8A66\u5439\u3000\u3000\u25C6\n\u25C6\u25C7\u25C7\u25C7\u25C7\u25C7\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30AE\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u25C6\u25C7\u25C7\u25C7\u25C6\u3000\u25C6\n\u25C6\u3000\u25C6\u25C7\u25C7\u25C7\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u968E\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1249,7 +1433,7 @@ MonoBehaviour:
       name: Fei6
       fullName: Tests.Fei6
       resultStatus: 1
-      duration: 0.0413581
+      duration: 0.0413423
       messages: 
       output: 
       stacktrace: 
@@ -1258,14 +1442,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1021
+      parentId: 1027
       parentUniqueId: EditerTests.dll/[Tests][suite]
     - id: 1019
       uniqueId: EditerTests.dll/Tests/Fei6/[EditerTests][Tests.Fei6.Test_EyeDropWorks]
       name: Test_EyeDropWorks
       fullName: Tests.Fei6.Test_EyeDropWorks
       resultStatus: 1
-      duration: 0.0102751
+      duration: 0.0112811
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u7F60\u3000\u3000\u3000\u7F60\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C7\u3000\u25C6\u3000\u25C7\u3000\u25C6\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u7F60\u3000\u7F60\u3000\u7F60\u3000\u7F60\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u25C7\u3000\u25C6\u3000\u25C7\u3000\u3000\u25C6\n\u25C6\u30DE\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u7F60\u3000\u3000\u3000\u7F60\u968E\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1282,7 +1466,7 @@ MonoBehaviour:
       name: Test_Fei6HasPrinted
       fullName: Tests.Fei6.Test_Fei6HasPrinted
       resultStatus: 1
-      duration: 0.0106386
+      duration: 0.0093512
       messages: 
       output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u25C7\u3000\u25C6\u3000\u25C7\u3000\u25C6\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u8A66\u3000\u3000\u25C6\u3000\u25C7\u3000\u25C6\u3000\u25C7\u3000\u3000\u25C6\n\u25C6\u30DE\u3000\u3000\u773C\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u968E\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
@@ -1299,7 +1483,7 @@ MonoBehaviour:
       name: Test_TrapWorks
       fullName: Tests.Fei6.Test_TrapWorks
       resultStatus: 1
-      duration: 0.0005993
+      duration: 0.0003881
       messages: 
       output: 
       stacktrace: 
@@ -1315,9 +1499,9 @@ MonoBehaviour:
       uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei7][suite]
       name: Fei7
       fullName: Tests.Fei7
-      resultStatus: 2
-      duration: 0.0714437
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1006247
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1325,16 +1509,16 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1025
+      parentId: 1027
       parentUniqueId: EditerTests.dll/[Tests][suite]
     - id: 1025
       uniqueId: EditerTests.dll/Tests/Fei7/[EditerTests][Tests.Fei7.Test_EnemiesMove]
       name: Test_EnemiesMove
       fullName: Tests.Fei7.Test_EnemiesMove
       resultStatus: 1
-      duration: 0.0243599
+      duration: 0.041108
       messages: 
-      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u30DE\uFF27\u3000\u3000\u25C6\n\u25C6\uFF27\u3000\u3000\u30DE\u30AE\u3000\uFF27\u25C6\n\u25C6\u6B66\u3000\u3000\u30DE\u30AE\u3000\u3000\u25C6\n\u25C6\u6B66\uFF27\u3000\u3000\u30AE\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u968E\u25C6\n\u25C6\uFF27\u3000\u3000\u8A66\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u30DE\uFF27\u3000\u3000\u25C6\n\u25C6\uFF27\u3000\u3000\u30DE\u30AE\u3000\uFF27\u25C6\n\u25C6\u6B66\u3000\u3000\u30DE\u3000\u3000\u3000\u25C6\n\u25C6\u6B66\uFF27\u3000\u30AE\u30AE\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u968E\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u8A66\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u6B66\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u3000\uFF27\u6B66\u3000\u25C6\n\u25C6\uFF27\u3000\u6B66\u3000\u6B66\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\u6B66\u3000\u6B66\u3000\u3000\u25C6\n\u25C6\u3000\uFF27\u6B66\u6B66\u6B66\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u968E\u25C6\n\u25C6\uFF27\u3000\u3000\u8A66\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u3000\uFF27\u3000\u3000\u25C6\n\u25C6\uFF27\u3000\u6B66\u3000\u6B66\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\u6B66\u6B66\u6B66\u6B66\u3000\u25C6\n\u25C6\u3000\uFF27\u6B66\u3000\u3000\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u968E\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u8A66\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u3000\uFF27\u3000\u3000\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u6B66\uFF27\u25C6\n\u25C6\u3000\u3000\u3000\u6B66\u3000\u6B66\u3000\u25C6\n\u25C6\u3000\uFF27\u3000\u6B66\u6B66\uFF27\u6B66\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u6B66\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u8A66\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1348,13 +1532,11 @@ MonoBehaviour:
       uniqueId: EditerTests.dll/Tests/Fei7/[EditerTests][Tests.Fei7.Test_Fei7_Fail]
       name: Test_Fei7_Fail
       fullName: Tests.Fei7.Test_Fei7_Fail
-      resultStatus: 2
-      duration: 0.0117503
-      messages: "  Expected: not equal to <(7, 6)>\n  But was:  <(7, 6)>\n"
-      output: 
-      stacktrace: 'at Tests.Fei7.Test_Fei7_Fail () [0x0001e] in /Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame/Assets/Tests/EditerTests/FeiTests/Fei7.cs:40
-
-'
+      resultStatus: 1
+      duration: 0.0120647
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u3000\uFF27\u3000\u3000\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u6B66\uFF27\u25C6\n\u25C6\u3000\u3000\u3000\u6B66\u3000\u6B66\u3000\u25C6\n\u25C6\u3000\uFF27\u3000\u6B66\u6B66\uFF27\u6B66\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u6B66\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u8A66\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1368,9 +1550,9 @@ MonoBehaviour:
       name: Test_Fei7_Pass
       fullName: Tests.Fei7.Test_Fei7_Pass
       resultStatus: 1
-      duration: 0.0007391
+      duration: 0.0113144
       messages: 
-      output: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u6B66\uFF27\u25C6\n\u25C6\u3000\u3000\uFF27\u3000\uFF27\u6B66\u3000\u25C6\n\u25C6\uFF27\u3000\u6B66\u3000\u6B66\u3000\uFF27\u25C6\n\u25C6\u3000\u3000\u6B66\u3000\u6B66\u3000\u3000\u25C6\n\u25C6\u3000\uFF27\u6B66\u6B66\u6B66\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u8A66\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1385,9 +1567,9 @@ MonoBehaviour:
       name: Test_floorHasPrinted
       fullName: Tests.Fei7.Test_floorHasPrinted
       resultStatus: 1
-      duration: 0.0154551
+      duration: 0.0135196
       messages: 
-      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u6B66\uFF27\u30DE\uFF27\u30AE\u3000\u25C6\n\u25C6\uFF27\u6B66\u3000\u30DE\u3000\u30AE\uFF27\u25C6\n\u25C6\u3000\u6B66\u3000\u30DE\u3000\u30AE\u3000\u25C6\n\u25C6\u3000\uFF27\u3000\u3000\u3000\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u968E\u25C6\n\u25C6\uFF27\u3000\u8A66\u5DFB\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\uFF27\u3000\u3000\u3000\u3000\u3000\uFF27\u25C6\n\u25C6\u3000\u6B66\uFF27\u6B66\uFF27\u6B66\u3000\u25C6\n\u25C6\uFF27\u6B66\u3000\u6B66\u3000\u6B66\uFF27\u25C6\n\u25C6\u3000\u6B66\u3000\u6B66\u3000\u6B66\u3000\u25C6\n\u25C6\u3000\uFF27\u3000\u3000\u3000\uFF27\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u968E\u25C6\n\u25C6\uFF27\u3000\u8A66\u7720\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1397,13 +1579,130 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1021
       parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei7][suite]
-    m_ResultText: "PlayerHasAttacked (0.015s)\n---\n(5, 2)\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\u3000\u3000\n\u25C6\u968E\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u30DE\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C7\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u8349\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6"
+    - id: 1026
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei8][suite]
+      name: Fei8
+      fullName: Tests.Fei8
+      resultStatus: 1
+      duration: 0.0693294
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1030
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1027
+      uniqueId: EditerTests.dll/Tests/Fei8/[EditerTests][Tests.Fei8.Test_floorHasPrinted]
+      name: Test_floorHasPrinted
+      fullName: Tests.Fei8.Test_floorHasPrinted
+      resultStatus: 1
+      duration: 0.0292805
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u773C\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u8A66\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u968E\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei8][suite]
+    - id: 1028
+      uniqueId: EditerTests.dll/Tests/Fei8/[EditerTests][Tests.Fei8.Test_warpTrapWorks]
+      name: Test_warpTrapWorks
+      fullName: Tests.Fei8.Test_warpTrapWorks
+      resultStatus: 1
+      duration: 0.0234876
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u8DF3\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u968E\u25C7\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u8DF3\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u8DF3\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u3000\u25C6\u3000\u3000\u3000\u3000\u3000\u25C6\u3000\u3000\u3000\n\u8A66\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u3000\u3000\u3000\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei8][suite]
+    - id: 1029
+      uniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei9][suite]
+      name: Fei9
+      fullName: Tests.Fei9
+      resultStatus: 1
+      duration: 0.065472
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: EditerTests.dll/[Tests][suite]
+    - id: 1031
+      uniqueId: EditerTests.dll/Tests/Fei9/[EditerTests][Tests.Fei9.Test_Fail]
+      name: Test_Fail
+      fullName: Tests.Fei9.Test_Fail
+      resultStatus: 1
+      duration: 0.0006345
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei9][suite]
+    - id: 1030
+      uniqueId: EditerTests.dll/Tests/Fei9/[EditerTests][Tests.Fei9.Test_floorHasPrinted]
+      name: Test_floorHasPrinted
+      fullName: Tests.Fei9.Test_floorHasPrinted
+      resultStatus: 1
+      duration: 0.0114708
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u968E\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u3000\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u3000\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u6B66\u6B66\u6B66\u25C7\u8A66\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u7E1B\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei9][suite]
+    - id: 1032
+      uniqueId: EditerTests.dll/Tests/Fei9/[EditerTests][Tests.Fei9.Test_Pass]
+      name: Test_Pass
+      fullName: Tests.Fei9.Test_Pass
+      resultStatus: 1
+      duration: 0.0346735
+      messages: 
+      output: "\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u968E\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u3000\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u3000\u6B66\u6B66\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u6B66\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u968E\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u3000\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u6B66\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u8A66\u25C7\u6B66\u6B66\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n\u25C6\u3000\u3000\u8A66\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u6B66\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u6B66\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u6B66\u3000\u3000\u25C7\u3000\u25C6\n\u25C6\u3000\u25C7\u25C7\u25C7\u25C7\u25C7\u3000\u25C6\n\u25C6\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u25C6\n\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\u25C6\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditerTests.dll/Tests/[EditerTests][Tests.Fei9][suite]
+    m_ResultText: Fei12 (0.116s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2509bb0b
-      m_LastClickedID: 196806949
-      m_ExpandedIDs: 856bd585434014969e0a699edbf809a4e21259a52de7e0a6a385eca679b753a7ae5afbb2102937b5503517b765d068c438c680c4e934dbc7313773d6ba1057eae79943ec15d56df2ab472df33beef2024940b904d10d1e11dd460113d23fbd1329e497182b6cf91ac558723c4054844043a17443ef02f94791d57851379cef51955b0253e189df5b2d7552690ed3eb77ffffff7f
+      m_SelectedIDs: 71a52202
+      m_LastClickedID: 35825009
+      m_ExpandedIDs: 856bd585434014969e0a699edbf809a4e21259a52de7e0a6a385eca679b753a7ae5afbb27a3eeeb3102937b5503517b765d068c438c680c4e934dbc7dfc991cf313773d6ba1057eae79943ec15d56df2ab472df3c458f4fc71a522023beef2024940b904d10d1e11dd460113d23fbd1329e497182b6cf91ae6352e3230d05e37c558723c4054844043a17443ef02f9474bc1d14d91d57851379cef51955b0253e189df5b2d7552690ed3eb77ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
