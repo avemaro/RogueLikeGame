@@ -21,16 +21,4 @@ public class Enemy : Creature {
     public void Work() {
         brain.Work();
     }
-
-
-
-    public void Fly(Direction direction) {
-        var nextCell = floor.GetTerrainCell(Position);
-        while (true) {
-            nextCell = nextCell.Next(direction);
-            if (nextCell.type != TerrainType.land &&
-                nextCell.type != TerrainType.water) break;
-            Position = nextCell;
-        }
-    }
 }
