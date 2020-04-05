@@ -5,15 +5,17 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item> {
     static readonly List<char> IDs = new List<char>() { '草', '杖', '巻', '吹',
-        '眼', 'Ｇ', '眠', '縛', '真', '薬', 'つ', '透' };
+        '眼', 'Ｇ', '眠', '縛', '真', '薬'};
     public new static Item Create(Floor floor, Cell cell, char data) {
+        var equipment = Equipment.Create(floor, cell, data);
+        if (equipment != null) return equipment;
         if (!IDs.Contains(data)) return null;
         return new Item(floor, cell, data);
     }
 
     int durability = 1;
 
-    private Item(Floor floor, Cell cell, char data) {
+    protected Item(Floor floor, Cell cell, char data) {
         this.floor = floor;
         Position = cell;
         ID = data;
@@ -75,6 +77,7 @@ public class Item : Stuff, IEquatable<Item> {
     }
 
     public bool Equals(Item other) {
-        return ID == other.ID;
+        return base.Equals(other);
+        //return ID == other.ID;
     }
 }

@@ -38,6 +38,7 @@ namespace Tests
 
         [Test]
         public void Test_wallHasDigged() {
+            floor.PrintFloor();
             player.Move(Direction.right);
             player.Equip(0);
             player.Attack();
@@ -45,6 +46,8 @@ namespace Tests
             player.Attack();
             player.Move(Direction.right);
             player.Attack();
+            player.Move(Direction.right);
+            floor.PrintFloor();
 
             var expected = new string[] {
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
@@ -52,8 +55,8 @@ namespace Tests
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆Ｇ◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
                 "◆つ透◆◆◆◆◆◆◆◆◆◆◆◆◆◆☆☆☆◆◆◆◆◆◆◆◆◆◆",
-                "◆試つ◆◆◆Ｇ　　◇　　　◆◆◆◆☆Ｇ☆◆◆◆◆　　　　◆◆",
-                "◆◆◆◆◆◆　　　◇　つ　◆◆◆◆☆☆☆◆◆◆◆　　　武◆◆",
+                "◆　　　　試Ｇ　　◇　　　◆◆◆◆☆Ｇ☆◆◆◆◆武　　　◆◆",
+                "◆◆◆◆◆◆　　　◇　つ　◆◆◆◆☆☆☆◆◆◆◆　　　　◆◆",
                 "◆◆◆◆◆◆　　　◇　　　◆◆◆◆◆◆◆◆◆◆◆階　　　◆◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",

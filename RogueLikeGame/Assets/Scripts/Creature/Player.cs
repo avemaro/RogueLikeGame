@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class Player: Creature {
     public List<Item> Items { get; private set; } = new List<Item>();
+    public Equipment weapon;
 
     public Player(Floor floor) {
         this.floor = floor;
@@ -23,15 +24,27 @@ public class Player: Creature {
     }
 
     public void Use(int index) {
-        if (index > Items.Count - 1) return;
-        var item = Items[index];
+        var item = GetItem(index);
+        if (item == null) return;
         item.Use(this);
         floor.Work();
     }
 
     public void Throw(int index) {
-        var item = Items[index];
+        var item = GetItem(index);
+        if (item == null) return;
         item.Throw(this);
         floor.Work();
+    }
+
+    public void Equip(int index) {
+        var item = GetItem(index);
+        if (!(item is Equipment)) return;
+        weapon = (Equipment)item;
+    }
+
+    Item GetItem(int index) {
+        if (index > Items.Count - 1) return null;
+        return Items[index];
     }
 }

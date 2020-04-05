@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Creature\Player.cs" />
     <Compile Include="Assets\Scripts\Creature\State.cs" />
     <Compile Include="Assets\Scripts\Direction.cs" />
+    <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\Floor.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Stuff.cs" />

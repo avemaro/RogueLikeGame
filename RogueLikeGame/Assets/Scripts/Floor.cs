@@ -79,6 +79,14 @@ public class Floor {
                     hasAttacked = true;
                 }
             }
+
+            if (Player.weapon != null) {
+                if (nextCell.type == TerrainType.wall) {
+                    nextCell.type = TerrainType.land;
+                }
+            }
+
+
             return hasAttacked;
         }
 
