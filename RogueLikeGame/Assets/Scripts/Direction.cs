@@ -43,6 +43,19 @@ public static class DirectionExtend {
         }
     }
 
+    public static Direction Reverse(this Direction direction) {
+        switch (direction) {
+            case Direction.up: return Direction.down;
+            case Direction.upRight: return Direction.downLeft;
+            case Direction.right: return Direction.left;
+            case Direction.downRight: return Direction.upLeft;
+            case Direction.down: return Direction.up;
+            case Direction.downLeft: return Direction.upRight;
+            case Direction.left: return Direction.right;
+            default: return Direction.downRight;
+        }
+    }
+
     public static Direction[] Forwards(this Direction direction) {
         switch (direction) {
             case Direction.up:
