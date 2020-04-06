@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Item : Stuff, IEquatable<Item>, IAttacker {
     static readonly List<char> IDs = new List<char>()
-    { '草', '眼', 'Ｇ', '薬', 'ト'};
+    { '草', '眼', 'Ｇ', '薬'};
     public new static Item Create(Floor floor, Cell cell, char data) {
         var equipment = Equipment.Create(floor, cell, data);
         if (equipment != null) return equipment;
@@ -13,6 +13,8 @@ public class Item : Stuff, IEquatable<Item>, IAttacker {
         if (scroll != null) return scroll;
         var wand = Wand.Create(floor, cell, data);
         if (wand != null) return wand;
+        var pot = Pot.Create(floor, cell, data);
+        if (pot != null) return pot;
 
         if (!IDs.Contains(data)) return null;
         return new Item(floor, cell, data);

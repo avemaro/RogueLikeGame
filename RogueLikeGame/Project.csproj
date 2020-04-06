@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Floor.cs" />
     <Compile Include="Assets\Scripts\IAttacker.cs" />
     <Compile Include="Assets\Scripts\Item\Item.cs" />
+    <Compile Include="Assets\Scripts\Item\Pot.cs" />
     <Compile Include="Assets\Scripts\Item\Scroll.cs" />
     <Compile Include="Assets\Scripts\Item\Wand.cs" />
     <Compile Include="Assets\Scripts\Stuff.cs" />
