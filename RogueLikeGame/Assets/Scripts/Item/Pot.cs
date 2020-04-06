@@ -10,7 +10,7 @@ public class Pot : Item {
         return new Pot(floor, cell, data);
     }
 
-    List<Item> items = new List<Item>();
+    readonly List<Item> contents = new List<Item>();
 
     protected Pot(Floor floor, Cell cell, char data) : base(floor, cell, data) {
         this.floor = floor;
@@ -29,7 +29,7 @@ public class Pot : Item {
                 if (floor.GetEnemy(nextCell.x, nextCell.y) != null) break;
                 var item = floor.GetItem(nextCell.x, nextCell.y);
                 if (item == null) continue;
-                items.Add(item);
+                contents.Add(item);
                 floor.Remove(item);
                 break;
             }
@@ -48,9 +48,9 @@ public class Pot : Item {
                 nextCell.type == TerrainType.breakableWall)
                 break;
 
-            items[0].Position = nextCell;
+            contents[0].Position = nextCell;
         }
-        floor.Items.Add(items[0]);
+        floor.Items.Add(contents[0]);
 
         return true;
     }

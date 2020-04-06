@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\Floor.cs" />
     <Compile Include="Assets\Scripts\IAttacker.cs" />
+    <Compile Include="Assets\Scripts\Item\Herb.cs" />
     <Compile Include="Assets\Scripts\Item\Item.cs" />
     <Compile Include="Assets\Scripts\Item\Pot.cs" />
     <Compile Include="Assets\Scripts\Item\Scroll.cs" />

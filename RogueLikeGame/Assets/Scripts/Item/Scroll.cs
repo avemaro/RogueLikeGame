@@ -16,17 +16,19 @@ public class Scroll : Item {
         ID = data;
     }
 
+    protected override void Work(Player player, Stuff stuff) {
+        var enemy = (Enemy)stuff;
+        if (ID == '眠')
+            enemy.state = State.Sleep;
+        if (ID == '真')
+            enemy.IsAttacked(this);
+    }
+
     public override bool Use(Player player) {
         player.Items.Remove(this);
 
-        if (ID == '眠') {
-            foreach (var enemy in floor.Enemies)
-                enemy.state = State.Sleep;
-        }
-
-        if (ID == '真') {
-            for (var i = 0; i < floor.Enemies.Count; i++)
-                floor.Enemies[i].IsAttacked(this);
+        foreach (var enemy in floor.Enemies) {
+            Work(player, enemy);
         }
 
         return true;
