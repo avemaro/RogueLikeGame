@@ -10,6 +10,8 @@ public class Pot : Item {
         return new Pot(floor, cell, data);
     }
 
+    List<Item> items = new List<Item>();
+
     protected Pot(Floor floor, Cell cell, char data) : base(floor, cell, data) {
         this.floor = floor;
         Position = cell;
@@ -17,6 +19,39 @@ public class Pot : Item {
     }
 
     public override bool Use(Player player) {
+        if (ID == 'ト') {
+            var nextCell = floor.GetTerrainCell(player.Position);
+
+            while (true) {
+                nextCell = nextCell.Next(player.direction);
+                if (nextCell.type != TerrainType.land &&
+                    nextCell.type != TerrainType.water) break;
+                if (floor.GetEnemy(nextCell.x, nextCell.y) != null) break;
+                var item = floor.GetItem(nextCell.x, nextCell.y);
+                if (item == null) continue;
+                items.Add(item);
+                floor.Remove(item);
+                break;
+            }
+        }
+        return true;
+    }
+
+    public override bool Throw(Player player) {
+        player.Items.Remove(this);
+
+        var nextCell = floor.GetTerrainCell(player.Position);
+        while (true) {
+            nextCell = nextCell.Next(player.direction);
+
+            if (nextCell.type == TerrainType.wall ||
+                nextCell.type == TerrainType.breakableWall)
+                break;
+
+            items[0].Position = nextCell;
+        }
+        floor.Items.Add(items[0]);
+
         return true;
     }
 }

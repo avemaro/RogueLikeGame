@@ -9,7 +9,7 @@ public class Floor {
     public Player Player { get; private set; }
 
     public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
-    readonly List<Item> items = new List<Item>();
+    public List<Item> Items { get; private set; } = new List<Item>();
     public List<Trap> Traps { get; private set; } = new List<Trap>();
 
     public Floor(string[] floorData) {
@@ -32,7 +32,7 @@ public class Floor {
                 if (data == '階') StairPosition = cell;
 
                 var stuff = Stuff.Create(this, cell, data);
-                if (stuff is Item) items.Add((Item)stuff);
+                if (stuff is Item) Items.Add((Item)stuff);
                 if (stuff is Enemy) Enemies.Add((Enemy)stuff);
                 if (stuff is Trap) Traps.Add((Trap)stuff);
             }
@@ -86,7 +86,7 @@ public class Floor {
     }
 
     public Item GetItem(int x, int y) {
-        foreach (var item in items)
+        foreach (var item in Items)
             if (item.Position == (x, y)) return item;
         return null;
     }
@@ -101,6 +101,19 @@ public class Floor {
         return null;
     }
 
+    public Enemy GetEnemy(Cell from, Direction direction, List<TerrainType> blockTerrans) {
+        var nextCell = GetTerrainCell(from);
+
+        while (true) {
+            nextCell = nextCell.Next(direction);
+            if (blockTerrans.Contains(nextCell.type)) break;
+            var enemy = GetEnemy(nextCell);
+            if (enemy == null) continue;
+            return enemy;
+        }
+        return null;
+    }
+
     public Trap GetTrap(int x, int y) {
         foreach (var trap in Traps)
             if (trap.Position == (x, y)) return trap;
@@ -109,7 +122,7 @@ public class Floor {
     #endregion
 
     public void Remove(Item item) {
-        items.Remove(item);
+        Items.Remove(item);
     }
 
     public void Remove(Creature creature) {

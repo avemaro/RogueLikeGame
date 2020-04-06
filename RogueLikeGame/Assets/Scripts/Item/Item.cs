@@ -38,23 +38,16 @@ public class Item : Stuff, IEquatable<Item>, IAttacker {
             return true;
         }
 
-        var nextCell = floor.GetTerrainCell(player.Position);
+        var enemy = floor.GetEnemy(player.Position, player.direction,
+            new List<TerrainType>() { TerrainType.wall, TerrainType.breakableWall });
+        if (enemy == null) return true;
+        if (ID == '草')
+            enemy.IsAttacked(this);
 
-        while (true) {
-            nextCell = nextCell.Next(player.direction);
-            if (nextCell.type != TerrainType.land &&
-                nextCell.type != TerrainType.water) break;
-
-            var enemy = floor.GetEnemy(nextCell.x, nextCell.y);
-            if (enemy == null) continue;
-            if (ID == '草')
-                enemy.IsAttacked(this);
-            break;
-        }
         return true;
     }
 
-    public bool Throw(Player player) {
+    public virtual bool Throw(Player player) {
         return Use(player);
     }
 

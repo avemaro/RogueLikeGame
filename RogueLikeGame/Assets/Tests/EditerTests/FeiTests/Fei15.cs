@@ -37,10 +37,12 @@ namespace Tests
         public void Test_Pass() {
             player.Move(6, 6, 6, 6, 4);
             player.Use(0);
-            player.Move(0);
+            player.Move(2);
             player.Throw(0);
             floor.PrintFloor();
-            player.Move(2, 6, 4, 2, 3);
+            player.Move(2, 2, 2, 2);
+            floor.PrintFloor();
+            player.Move(6, 6, 4);
             floor.PrintFloor();
             player.Use(0);
             player.Move(4, 5);

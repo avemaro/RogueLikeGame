@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using UnityEngine;
 
 public class Player: Creature {
     public List<Item> Items { get; private set; } = new List<Item>();
@@ -19,13 +20,6 @@ public class Player: Creature {
 
     public override bool Attack() {
         return weapon.Attack();
-        //var to = Position.Next(direction);
-
-        //var enemy = floor.GetEnemy(to);
-        //if (enemy != null) return enemy.IsAttacked(this);
-
-        //var cell = floor.GetTerrainCell(to);
-        //return cell.IsAttacked(this);
     }
 
     bool PickUp() {
