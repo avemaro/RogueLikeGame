@@ -63,21 +63,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei1.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei10.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei2.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei3.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei4.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei5.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei6.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei7.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei8.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei1-10\Fei9.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei11.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei12.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei13.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei14.cs" />
-    <Compile Include="Assets\Tests\EditerTests\FeiTests\Fei15.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei1.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei10.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei2.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei3.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei4.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei5.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei6.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei7.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei8.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei1-10\Fei9.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei11.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei12.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei13.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei14.cs" />
+    <Compile Include="Assets\Tests\FeiTests\FeiTests\Fei15.cs" />
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>/Users/yamasaki/GitHub/RogueLikeGame/RogueLikeGame/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>

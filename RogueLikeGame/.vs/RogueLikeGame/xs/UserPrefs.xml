@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}|">
   <MonoDevelop.Ide.ItemProperties.EditerTests PreferredExecutionTarget="3215624e-a8d2-4a94-b660-9b428e01243c" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Item/Item.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tests/EditerTests/EditerTests.asmdef">
     <Files>
-      <File FileName="Assets/Scripts/Floor.cs" Line="115" Column="6" />
-      <File FileName="Assets/Scripts/TerrainCell.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Trap.cs" Line="20" Column="35" />
-      <File FileName="Assets/Scripts/Creature/Creature.cs" Line="16" Column="52" />
-      <File FileName="Assets/Scripts/Item/Wand.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/Item/Pot.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Creature/Player.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/Item/Item.cs" Line="15" Column="39" />
-      <File FileName="Assets/Tests/EditerTests/FeiTests/Fei15.cs" Line="44" Column="29" NotebookId="1" />
+      <File FileName="Assets/Scripts/Floor.cs" Line="157" Column="2" />
+      <File FileName="Assets/Scripts/TerrainCell.cs" />
+      <File FileName="Assets/Scripts/Creature/Creature.cs" />
+      <File FileName="Assets/Scripts/Item/Wand.cs" />
+      <File FileName="Assets/Scripts/Item/Pot.cs" />
+      <File FileName="Assets/Scripts/Creature/Player.cs" />
+      <File FileName="Assets/Scripts/Item/Item.cs" />
       <File FileName="Assets/Scripts/Item/Scroll.cs" Line="16" Column="19" NotebookId="1" />
-      <File FileName="Assets/Scripts/Item/Herb.cs" Line="32" Column="10" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/EditerTests.asmdef" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Tests/EditerTests/EditerTests.asmdef" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Project.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
