@@ -31,13 +31,13 @@ namespace Tests
 
         [Test]
         public void Test_floorHasPrinted() {
-            Assert.AreEqual(data, floor.PrintFloor());
+            Assert.AreEqual(data, floor.Show());
         }
 
         [Test]
         public void Test_Fail() {
             player.Move(2, 2, 1);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual(State.Dead, player.state);
         }
 
@@ -61,10 +61,10 @@ namespace Tests
             player.Move(2, 2, 2, 2, 2,
                         2, 2, 2, 2, 2,
                         2);
-            floor.PrintFloor();
+            floor.Show();
             player.Use(0);
             player.Move(2, 2);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual(floor.StairPosition, player.Position);
         }
     }

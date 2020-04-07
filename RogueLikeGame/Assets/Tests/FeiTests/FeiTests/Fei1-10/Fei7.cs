@@ -31,13 +31,13 @@ namespace Tests
 
         [Test]
         public void Test_floorHasPrinted() {
-            Assert.AreEqual(data, floor.PrintFloor());
+            Assert.AreEqual(data, floor.Show());
         }
 
         [Test]
         public void Test_Fei7_Fail() {
             player.Move(2, 2, 2, 1);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreNotEqual(floor.StairPosition, player.Position);
         }
 
@@ -46,7 +46,7 @@ namespace Tests
             player.Move(2);
             player.Use(0);
             player.Move(2, 2, 1);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual(floor.StairPosition, player.Position);
         }
 
@@ -54,12 +54,12 @@ namespace Tests
         public void Test_EnemiesMove() {
             var enemy = floor.GetEnemy(6, 4);
             player.Move(2);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual((5, 5), enemy.Position);
             player.Move(2);
-            floor.PrintFloor();
+            floor.Show();
             player.Move(2);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual((6, 5), enemy.Position);
         }
     }

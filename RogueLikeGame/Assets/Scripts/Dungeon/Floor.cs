@@ -14,9 +14,40 @@ public class Floor {
     public List<Item> Items { get; private set; } = new List<Item>();
     public List<Trap> Traps { get; private set; } = new List<Trap>();
 
+    public IFloorDisplay floorDisplay;
+
+    public Floor(string text) {
+        List<string> floorData = new List<string>();
+
+        var str = "";
+        foreach (var c in text) {
+            if (c == '\n') {
+                floorData.Add(str);
+                str = "";
+                continue;
+            }
+            str += c;
+        }
+        floorData.Add(str);
+
+        Player = new Player(this);
+
+        FloorInit(floorData.ToArray());
+
+        floorDisplay = new FloorPrinter(this);
+        floorDisplay.Show();
+    }
+
     public Floor(string[] floorData) {
         Player = new Player(this);
 
+        FloorInit(floorData);
+
+        floorDisplay = new FloorPrinter(this);
+        floorDisplay.Show();
+    }
+
+    void FloorInit(string[] floorData) {
         floorSize.x = floorData[0].Length;
         foreach (var data in floorData)
             if (floorSize.x < data.Length) floorSize.x = data.Length;
@@ -41,6 +72,7 @@ public class Floor {
         }
     }
 
+
     public void Work() {
         Enemies.RemoveAll(enemy => enemy.state == State.Dead);
 
@@ -50,6 +82,8 @@ public class Floor {
             trap.Work();
 
         Enemies.RemoveAll(enemy => enemy.state == State.Dead);
+
+        floorDisplay.Show();
     }
 
     #region terrain
@@ -132,32 +166,16 @@ public class Floor {
     }
 
     public Room GetRoom(Cell position) {
-        if (position.x > 14) return Rooms[1];
-        return Rooms[0];
+        foreach (var room in Rooms) {
+            if (room.Contains(position)) return room;
+        }
+
+        return null;
     }
 
-    public List<string> PrintFloor() {
-        var floorData = new List<string>();
-        for (var y = 0; y < floorSize.y; y++) {
-            var str = "";
-            for (var x = 0; x < floorSize.x; x++) {
-                char data = (char)GetTerrainCell(new Cell(x, y)).type;
-
-                if (StairPosition == (x, y)) data = '階';
-                var stuff = GetStuff(x, y);
-                if (stuff != null) {
-                    data = stuff.ID;
-                    if (!stuff.isVisible) data = '　';
-                    if (stuff is Enemy) {
-                        if (((Enemy)stuff).state == State.Dead) data = '　';
-                    }
-                }
-                if (Player.Position == (x, y)) data = '試';
-                str += data;
-            }
-            floorData.Add(str);
-            Debug.Log(str);
-        }
-        return floorData;
+    public List<string> Show() {
+        if (floorDisplay is FloorPrinter)
+            return ((FloorPrinter)floorDisplay).GetString();
+        return new List<string>();
     }
 }

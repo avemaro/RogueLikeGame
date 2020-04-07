@@ -46,22 +46,22 @@ namespace Tests
                 "◆　武　　武　　武　◆　　　　　　　",
                 "◆◆◆◆◆◆◆◆◆◆◆　　　　　　　"
             };
-            Assert.AreEqual(expected, floor.PrintFloor());
+            Assert.AreEqual(expected, floor.Show());
         }
 
         [Test]
         public void Test_Pass() {
             player.Move(0, 1);
-            floor.PrintFloor();
+            floor.Show();
             player.Move(4);
-            floor.PrintFloor();
+            floor.Show();
             Assert.True(player.Move(2));
-            floor.PrintFloor();
+            floor.Show();
             Assert.True(player.Move(2));
-            floor.PrintFloor();
+            floor.Show();
             player.Move(2, 2, 2, 2, 2,
                         2, 2, 2, 2);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual(State.Alive, player.state);
             Assert.AreEqual(floor.StairPosition, player.Position);
         }

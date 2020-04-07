@@ -35,7 +35,7 @@ namespace Tests
             Assert.AreEqual(TerrainType.water, floor.GetTerrain(4, 1));
             Assert.AreEqual((8, 8), floor.StairPosition);
             Assert.AreEqual((2, 2), floor.Player.Position);
-            floor.PrintFloor();
+            floor.Show();
         }
 
         [Test]
@@ -49,7 +49,7 @@ namespace Tests
             Assert.False(player.Move(Direction.downRight));
             Assert.True(player.Move(Direction.downLeft));
             Assert.AreEqual((1, 5), player.Position);
-            floor.PrintFloor();
+            floor.Show();
         }
 
         [Test]

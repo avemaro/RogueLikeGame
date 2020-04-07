@@ -28,7 +28,7 @@ namespace Tests
         [Test]
         public void Test_Fei5HasPrinted() {
             var floor = new Floor(data);
-            Assert.AreEqual(data, floor.PrintFloor());
+            Assert.AreEqual(data, floor.Show());
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace Tests
 
             player.Move(2, 2, 2, 4, 4, 6);
             player.Use(0);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual((1, 4), enemy.Position);
         }
     }

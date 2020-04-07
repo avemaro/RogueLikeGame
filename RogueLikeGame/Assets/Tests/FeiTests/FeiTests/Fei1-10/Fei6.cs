@@ -36,7 +36,7 @@ namespace Tests
                 "◆マ　　眼　　　　　　　　　階　◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
             };
-            Assert.AreEqual(expected, floor.PrintFloor());
+            Assert.AreEqual(expected, floor.Show());
         }
 
         [Test]
@@ -56,7 +56,7 @@ namespace Tests
                 "◆マ　　試　　　　罠　　　罠階　◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
             };
-            Assert.AreEqual(expected, floor.PrintFloor());
+            Assert.AreEqual(expected, floor.Show());
         }
 
         [Test]

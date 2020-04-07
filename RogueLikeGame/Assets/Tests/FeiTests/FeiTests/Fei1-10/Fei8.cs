@@ -61,7 +61,7 @@ namespace Tests
                 "　◆　　　　　◆　　　",
                 "　◆◆◆◆◆◆◆　　　"
             };
-            Assert.AreEqual(expected, floor.PrintFloor());
+            Assert.AreEqual(expected, floor.Show());
         }
 
         [Test]
@@ -69,7 +69,7 @@ namespace Tests
             player.Move(Direction.up);
             player.Use(0);
             player.Move(Direction.up);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreNotEqual((6, 1), player.Position);
         }
     }

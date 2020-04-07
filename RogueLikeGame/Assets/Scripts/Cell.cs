@@ -86,6 +86,14 @@ public class Cell : IEquatable<Cell>, IEquatable<(int x, int y)> {
         return base.Equals(obj);
     }
 
+    public static Cell operator +(Cell lhs, Cell rhs) {
+        return new Cell(lhs.x + rhs.x, lhs.y + rhs.y);
+    }
+
+    public static Cell operator +(Cell lhs, (int x, int y) rhs) {
+        return new Cell(lhs.x + rhs.x, lhs.y + rhs.y);
+    }
+
     public static Cell operator -(Cell lhs, Cell rhs) {
         return new Cell(lhs.x - rhs.x, lhs.y - rhs.y);
     }

@@ -39,7 +39,7 @@ namespace Tests
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
             };
 
-            Assert.AreEqual(expected, floor.PrintFloor());
+            Assert.AreEqual(expected, floor.Show());
         }
 
         [Test]

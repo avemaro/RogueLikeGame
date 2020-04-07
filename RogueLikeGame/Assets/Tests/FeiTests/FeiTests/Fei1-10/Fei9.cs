@@ -30,7 +30,7 @@ namespace Tests
 
         [Test]
         public void Test_floorHasPrinted() {
-            Assert.AreEqual(data, floor.PrintFloor());
+            Assert.AreEqual(data, floor.Show());
         }
 
         [Test]
@@ -42,13 +42,13 @@ namespace Tests
         [Test]
         public void Test_Pass() {
             player.Move(4, 5, 6, 6, 6);
-            floor.PrintFloor();
+            floor.Show();
             player.Move(6, 7, 0);
-            floor.PrintFloor();
+            floor.Show();
             player.Move(0, 0, 2);
             player.Use(0);
             player.Move(1, 2);
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual(floor.StairPosition, player.Position);
             Assert.AreEqual(State.Alive, player.state);
         }

@@ -39,25 +39,25 @@ namespace Tests
         public void Test_Fei2() {
             var floor = new Floor(data);
             var player = floor.Player;
-            floor.PrintFloor();
+            floor.Show();
 
             Assert.False(player.Move(Direction.right));
             player.Attack();
-            floor.PrintFloor();
+            floor.Show();
             Assert.True(player.Move(Direction.right));
-            floor.PrintFloor();
+            floor.Show();
 
             int[] moves = { 2, 2, 2, 3, 4, 4 };
             Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
-            floor.PrintFloor();
+            floor.Show();
             player.Attack();
-            floor.PrintFloor();
+            floor.Show();
 
             moves = new int[] { 4, 4, 4, 4, 4,
                                 2, 3, 3, 4, 4,
                                 4, 4 };
             Assert.True(player.Move(DirectionExtend.GetDirections(moves)));
-            floor.PrintFloor();
+            floor.Show();
             Assert.AreEqual(floor.StairPosition, player.Position);
         }
 

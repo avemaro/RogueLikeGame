@@ -33,12 +33,12 @@ namespace Tests
 
         [Test]
         public void Test_floorHasPrinted() {
-            Assert.AreEqual(data, floor.PrintFloor());
+            Assert.AreEqual(data, floor.Show());
         }
 
         [Test]
         public void Test_wallHasDigged() {
-            floor.PrintFloor();
+            floor.Show();
             player.Move(Direction.right);
             player.Equip(0);
             player.Attack();
@@ -47,7 +47,7 @@ namespace Tests
             player.Move(Direction.right);
             player.Attack();
             player.Move(Direction.right);
-            floor.PrintFloor();
+            floor.Show();
 
             var expected = new string[] {
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
@@ -62,7 +62,7 @@ namespace Tests
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆",
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
             };
-            Assert.AreEqual(expected, floor.PrintFloor());
+            Assert.AreEqual(expected, floor.Show());
         }
     }
 }
