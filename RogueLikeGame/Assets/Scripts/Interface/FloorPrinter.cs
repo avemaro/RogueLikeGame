@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloorPrinter : IFloorDisplay {
+public class FloorPrinter {
     readonly Floor floor;
     readonly int width = 11;
-    readonly int height = 11;
+    readonly int height = 9;
 
     public FloorPrinter(Floor floor) {
         this.floor = floor;
     }
 
-    public void Show() {
+    public string[] GetStrings() {
         var center = floor.Player.Position;
 
         List<string> floorText = new List<string>();
@@ -23,8 +23,20 @@ public class FloorPrinter : IFloorDisplay {
                 line += data;
             }
             floorText.Add(line);
-            Debug.Log(line);
+            //Debug.Log(line);
         }
+
+        return floorText.ToArray();
+    }
+
+    public string GetText() {
+        var strings = GetStrings();
+        var text = "";
+        foreach (var str in strings) {
+            text += str;
+            text += "\n";
+        }
+        return text;
     }
 
     char GetChar(int x, int y) {

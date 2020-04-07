@@ -14,7 +14,7 @@ public class Floor {
     public List<Item> Items { get; private set; } = new List<Item>();
     public List<Trap> Traps { get; private set; } = new List<Trap>();
 
-    public IFloorDisplay floorDisplay;
+    public FloorPrinter printer;
 
     public Floor(string text) {
         List<string> floorData = new List<string>();
@@ -34,8 +34,8 @@ public class Floor {
 
         FloorInit(floorData.ToArray());
 
-        floorDisplay = new FloorPrinter(this);
-        floorDisplay.Show();
+        printer = new FloorPrinter(this);
+        printer.GetStrings();
     }
 
     public Floor(string[] floorData) {
@@ -43,8 +43,8 @@ public class Floor {
 
         FloorInit(floorData);
 
-        floorDisplay = new FloorPrinter(this);
-        floorDisplay.Show();
+        printer = new FloorPrinter(this);
+        printer.GetStrings();
     }
 
     void FloorInit(string[] floorData) {
@@ -83,7 +83,7 @@ public class Floor {
 
         Enemies.RemoveAll(enemy => enemy.state == State.Dead);
 
-        floorDisplay.Show();
+        printer.GetStrings();
     }
 
     #region terrain
@@ -174,8 +174,8 @@ public class Floor {
     }
 
     public List<string> Show() {
-        if (floorDisplay is FloorPrinter)
-            return ((FloorPrinter)floorDisplay).GetString();
+        if (printer is FloorPrinter)
+            return ((FloorPrinter)printer).GetString();
         return new List<string>();
     }
 }
