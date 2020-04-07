@@ -1,5 +1,5 @@
 {
-    "name": "FeiTests",
+    "name": "EditerTests",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
