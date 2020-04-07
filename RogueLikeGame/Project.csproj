@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Item\Pot.cs" />
     <Compile Include="Assets\Scripts\Item\Scroll.cs" />
     <Compile Include="Assets\Scripts\Item\Wand.cs" />
+    <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\Stuff.cs" />
     <Compile Include="Assets\Scripts\TerrainCell.cs" />
     <Compile Include="Assets\Scripts\TerrainType.cs" />

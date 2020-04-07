@@ -8,6 +8,8 @@ public class Floor {
     public Cell StairPosition { get; private set; }
     public Player Player { get; private set; }
 
+    public List<Room> Rooms { get; private set; } = new List<Room>();
+
     public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
     public List<Item> Items { get; private set; } = new List<Item>();
     public List<Trap> Traps { get; private set; } = new List<Trap>();
