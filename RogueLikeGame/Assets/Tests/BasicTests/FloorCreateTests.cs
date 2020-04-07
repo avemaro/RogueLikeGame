@@ -24,7 +24,7 @@ namespace Tests
                 "◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆"
             };
 
-            var floor = new Floor(floorData);
+            var floor = FloorMaker.Create(floorData);
             floor.PrintFloor();
 
             Assert.AreEqual(2, floor.Rooms.Count);
