@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class FloorMaker {
     public static Floor Create(string[] data) {
-        return new Floor(data);
+        var floor = new Floor(data);
+        floor.Rooms.Add(new Room());
+        floor.Rooms.Add(new Room());
+
+
+        return floor;
     }
 }

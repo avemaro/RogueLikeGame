@@ -131,6 +131,10 @@ public class Floor {
         if (creature is Enemy) Enemies.Remove((Enemy)creature);
     }
 
+    public Room GetRoom(Cell position) {
+        if (position.x > 14) return Rooms[1];
+        return Rooms[0];
+    }
 
     public List<string> PrintFloor() {
         var floorData = new List<string>();

@@ -36,6 +36,7 @@ namespace Tests
                 player.Move(Direction.right);
                 Assert.AreNotEqual(floor.Rooms[1], player.Room);
             }
+            player.Move(Direction.right);
             Assert.AreEqual(floor.Rooms[1], player.Room);
             floor.PrintFloor();
         }
