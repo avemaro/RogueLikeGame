@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project.csproj", "{5D51C5D3-84D3-1E00-D566-2F4E3E33CA43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditerTests", "EditerTests.csproj", "{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeiTests", "FeiTests.csproj", "{C8FB2FBD-1CD4-7B49-4A7F-92853DC9AA0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		{5D51C5D3-84D3-1E00-D566-2F4E3E33CA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D51C5D3-84D3-1E00-D566-2F4E3E33CA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D51C5D3-84D3-1E00-D566-2F4E3E33CA43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69A30F2C-88B9-25DF-4E0F-160B86FB8A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FB2FBD-1CD4-7B49-4A7F-92853DC9AA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FB2FBD-1CD4-7B49-4A7F-92853DC9AA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FB2FBD-1CD4-7B49-4A7F-92853DC9AA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FB2FBD-1CD4-7B49-4A7F-92853DC9AA0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
